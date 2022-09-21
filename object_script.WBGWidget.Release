@@ -1,0 +1,13 @@
+release/main.o
+release/indexwidget.o
+release/introducewidget.o
+release/login.o
+release/register.o
+release/register_info.o
+release/wbgwidget.o
+release/moc_indexwidget.o
+release/moc_introducewidget.o
+release/moc_login.o
+release/moc_register.o
+release/moc_register_info.o
+release/moc_wbgwidget.o

@@ -1,0 +1,13 @@
+debug/main.o
+debug/indexwidget.o
+debug/introducewidget.o
+debug/login.o
+debug/register.o
+debug/register_info.o
+debug/wbgwidget.o
+debug/moc_indexwidget.o
+debug/moc_introducewidget.o
+debug/moc_login.o
+debug/moc_register.o
+debug/moc_register_info.o
+debug/moc_wbgwidget.o
