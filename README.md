@@ -7,6 +7,6 @@ void WBGWIdget::initIndexWidget()
 
 }
 ``` 
-![示例](README_image/1.PNG)
+![示例](https://github.com/lqp1229226252/BCI/blob/WBGWidget/README_image/1.PNG)
 
 
