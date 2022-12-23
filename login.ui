@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>425</width>
-    <height>330</height>
+    <width>755</width>
+    <height>490</height>
    </rect>
   </property>
   <property name="sizePolicy">
@@ -18,124 +18,209 @@
   </property>
   <property name="minimumSize">
    <size>
-    <width>425</width>
-    <height>330</height>
+    <width>755</width>
+    <height>490</height>
    </size>
   </property>
   <property name="maximumSize">
    <size>
-    <width>426</width>
-    <height>330</height>
+    <width>755</width>
+    <height>490</height>
    </size>
   </property>
   <property name="windowTitle">
    <string>login</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">QPushButton
+   <string notr="true">*
 {
-	
-	background-color: rgba(255, 255, 255, 0);
+	font: 7pt &quot;Arial&quot;;
+	color: rgb(118, 119, 121);
 }
+
+#label_2
+{
+	font: 14pt &quot;Blackadder ITC&quot;;
+	color:rgb(255, 255, 255);
+}
+
+#label_3
+{
+	color:rgb(17, 168, 255);
+	font:14px;
+}
+
+
+QPushButton
+{	
+	font: 8pt &quot;Arial&quot;;
+}
+QPushButton:hover
+{	
+	color:rgb(255, 255, 255);
+}
+QPushButton:pressed
+{
+    background-color:rgba(255, 255, 255, 0)
+}
+
+#login
+{
+	background-color: rgb(31, 33, 38);
+}
+
+#lineEdit_account,#lineEdit_password
+{
+	background-color: rgb(49, 52, 59);
+	color:rgb(255, 255, 255);
+	border-style:none;
+	padding-left:10px;
+	border-radius:3px
+}
+
+#lineEdit_account:hover,#lineEdit_password:hover{
+	background-color: rgb(56, 59, 67);
+}
+#pushButton_forgetPassword:hover,#pushButton_register:hover{
+	background-color: rgb(255, 255, 255);
+}
+
+
+QCheckBox::indicator:unchecked{	
+		background-color:rgb(49, 52, 59);
+}
+QCheckBox::indicator:unchecked:hover{
+	background-color: rgb(56, 59, 67);
+}
+
+
+
+
+
+
+
+
+
+
+
+
 </string>
   </property>
   <widget class="QLabel" name="label">
    <property name="geometry">
     <rect>
-     <x>10</x>
-     <y>10</y>
-     <width>171</width>
-     <height>311</height>
+     <x>0</x>
+     <y>0</y>
+     <width>235</width>
+     <height>501</height>
     </rect>
    </property>
+   <property name="styleSheet">
+    <string notr="true">#label
+{
+	border-image: url(:/image/Nj.png);
+}</string>
+   </property>
    <property name="text">
-    <string>宣传片</string>
+    <string/>
    </property>
   </widget>
   <widget class="QLabel" name="label_2">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>10</y>
-     <width>161</width>
+     <x>280</x>
+     <y>60</y>
+     <width>111</width>
      <height>41</height>
     </rect>
    </property>
    <property name="text">
-    <string>logo</string>
+    <string>WeBrainGame</string>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_min">
    <property name="geometry">
     <rect>
-     <x>340</x>
+     <x>700</x>
      <y>10</y>
-     <width>41</width>
-     <height>41</height>
+     <width>21</width>
+     <height>31</height>
     </rect>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton#pushButton_min{
-	image: url(:/image/min.png);
+	image: url(:/image/min2.0.png);
 }
 QPushButton#pushButton_min:hover{
-	
-	background-color: rgb(224, 255, 255);
+
 }</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="flat">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_close">
    <property name="geometry">
     <rect>
-     <x>380</x>
+     <x>730</x>
      <y>10</y>
-     <width>41</width>
-     <height>41</height>
+     <width>21</width>
+     <height>21</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton#pushButton_close
 {
-	image: url(:/image/close.png);
+	image:url(:/image/close2.0.png);
 }
 QPushButton#pushButton_close:hover
 {
-	background-color: rgb(255,84,57);
-}</string>
+
+}
+outline:nonoe;</string>
    </property>
    <property name="text">
     <string/>
    </property>
    <property name="flat">
-    <bool>false</bool>
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QWidget" name="widget" native="true">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>70</y>
-     <width>241</width>
-     <height>171</height>
+     <x>270</x>
+     <y>100</y>
+     <width>481</width>
+     <height>151</height>
     </rect>
    </property>
    <widget class="QLabel" name="label_3">
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>10</y>
+      <y>0</y>
       <width>141</width>
-      <height>16</height>
+      <height>51</height>
      </rect>
     </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>14</pointsize>
+      <weight>9</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
     <property name="styleSheet">
-     <string notr="true">font: 11pt &quot;Adobe 黑体 Std R&quot;;</string>
+     <string notr="true">font: 75 14pt &quot;Arial&quot;;</string>
     </property>
     <property name="text">
      <string>账号密码登录</string>
@@ -145,13 +230,16 @@ QPushButton#pushButton_close:hover
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>90</y>
-      <width>211</width>
+      <y>100</y>
+      <width>371</width>
       <height>41</height>
      </rect>
     </property>
     <property name="frame">
      <bool>true</bool>
+    </property>
+    <property name="echoMode">
+     <enum>QLineEdit::Password</enum>
     </property>
     <property name="placeholderText">
      <string>请输入密码</string>
@@ -161,10 +249,22 @@ QPushButton#pushButton_close:hover
     <property name="geometry">
      <rect>
       <x>10</x>
-      <y>40</y>
-      <width>211</width>
+      <y>50</y>
+      <width>371</width>
       <height>41</height>
      </rect>
+    </property>
+    <property name="font">
+     <font>
+      <family>Arial</family>
+      <pointsize>7</pointsize>
+      <weight>50</weight>
+      <italic>false</italic>
+      <bold>false</bold>
+     </font>
+    </property>
+    <property name="styleSheet">
+     <string notr="true">font: 7pt &quot;Arial&quot;;</string>
     </property>
     <property name="frame">
      <bool>true</bool>
@@ -173,60 +273,48 @@ QPushButton#pushButton_close:hover
      <string>请输入用户名</string>
     </property>
    </widget>
-   <widget class="QWidget" name="">
-    <property name="geometry">
-     <rect>
-      <x>10</x>
-      <y>140</y>
-      <width>231</width>
-      <height>25</height>
-     </rect>
-    </property>
-    <layout class="QHBoxLayout" name="horizontalLayout">
-     <item>
-      <widget class="QCheckBox" name="checkBox_autoLand">
-       <property name="text">
-        <string>自动登录</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QCheckBox" name="checkBox_savePassword">
-       <property name="text">
-        <string>保存密码</string>
-       </property>
-      </widget>
-     </item>
-     <item>
-      <widget class="QPushButton" name="pushButton_forgetPassword">
-       <property name="text">
-        <string>忘记密码</string>
-       </property>
-       <property name="autoDefault">
-        <bool>false</bool>
-       </property>
-       <property name="default">
-        <bool>false</bool>
-       </property>
-       <property name="flat">
-        <bool>true</bool>
-       </property>
-      </widget>
-     </item>
-    </layout>
-   </widget>
   </widget>
   <widget class="QPushButton" name="pushButton_land">
    <property name="geometry">
     <rect>
-     <x>184</x>
-     <y>242</y>
-     <width>231</width>
-     <height>41</height>
+     <x>280</x>
+     <y>300</y>
+     <width>371</width>
+     <height>60</height>
     </rect>
    </property>
+   <property name="font">
+    <font>
+     <family>微软雅黑</family>
+     <pointsize>14</pointsize>
+     <weight>9</weight>
+     <italic>false</italic>
+     <bold>false</bold>
+    </font>
+   </property>
    <property name="styleSheet">
-    <string notr="true">font: 16pt &quot;Adobe 黑体 Std R&quot;;</string>
+    <string notr="true">QPushButton#pushButton_land{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  rgb(6, 191, 255), stop:1 rgb(44, 114, 255) );
+	color: rgb(255, 255, 255);
+	border-radius:3px;		
+	font: 75 14pt &quot;微软雅黑&quot;;
+}
+QPushButton#pushButton_land:hover{
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  rgb(20, 204, 255), stop:1 rgb(11, 141, 255) );
+	border-style:none;
+	border-radius:3px;
+	font: 75 14pt &quot;微软雅黑&quot;;
+}
+
+QPushButton#pushButton_land:pressed{
+	
+	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  rgb(20, 204, 255), stop:0.5 rgb(5, 191, 255), stop:1 rgb(11, 141, 255) );
+	border-style:none;
+	border-radius:3px;	
+	font: 75 14pt &quot;微软雅黑&quot;;
+}
+
+</string>
    </property>
    <property name="text">
     <string>登录</string>
@@ -235,37 +323,58 @@ QPushButton#pushButton_close:hover
   <widget class="QPushButton" name="pushButton_wechart">
    <property name="geometry">
     <rect>
-     <x>180</x>
-     <y>290</y>
-     <width>31</width>
-     <height>31</height>
+     <x>280</x>
+     <y>410</y>
+     <width>41</width>
+     <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/wc.png);</string>
+   </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_qq">
    <property name="geometry">
     <rect>
-     <x>210</x>
-     <y>290</y>
-     <width>31</width>
-     <height>31</height>
+     <x>330</x>
+     <y>410</y>
+     <width>41</width>
+     <height>41</height>
     </rect>
    </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">image: url(:/image/QQ.png);</string>
+   </property>
    <property name="text">
-    <string>PushButton</string>
+    <string/>
+   </property>
+   <property name="flat">
+    <bool>true</bool>
    </property>
   </widget>
   <widget class="QPushButton" name="pushButton_QRCode">
    <property name="geometry">
     <rect>
-     <x>240</x>
-     <y>290</y>
-     <width>31</width>
-     <height>31</height>
+     <x>380</x>
+     <y>410</y>
+     <width>41</width>
+     <height>41</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
     <string notr="true">QPushButton#pushButton_QRCode{
@@ -285,11 +394,17 @@ QPushButton#pushButton_QRCode:hover{
   <widget class="QPushButton" name="pushButton_register">
    <property name="geometry">
     <rect>
-     <x>360</x>
-     <y>295</y>
+     <x>600</x>
+     <y>370</y>
      <width>51</width>
-     <height>21</height>
+     <height>31</height>
     </rect>
+   </property>
+   <property name="cursor">
+    <cursorShape>PointingHandCursor</cursorShape>
+   </property>
+   <property name="styleSheet">
+    <string notr="true">font: 10pt &quot;Arial&quot;;</string>
    </property>
    <property name="text">
     <string>注册</string>
@@ -297,6 +412,90 @@ QPushButton#pushButton_QRCode:hover{
    <property name="flat">
     <bool>true</bool>
    </property>
+  </widget>
+  <widget class="QWidget" name="layoutWidget">
+   <property name="geometry">
+    <rect>
+     <x>280</x>
+     <y>249</y>
+     <width>371</width>
+     <height>41</height>
+    </rect>
+   </property>
+   <layout class="QHBoxLayout" name="horizontalLayout">
+    <item>
+     <widget class="QCheckBox" name="checkBox_autoLand">
+      <property name="minimumSize">
+       <size>
+        <width>119</width>
+        <height>0</height>
+       </size>
+      </property>
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>9</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="text">
+       <string>自动登录</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QCheckBox" name="checkBox_savePassword">
+      <property name="font">
+       <font>
+        <family>Arial</family>
+        <pointsize>9</pointsize>
+        <weight>9</weight>
+        <italic>false</italic>
+        <bold>false</bold>
+       </font>
+      </property>
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="text">
+       <string>保存密码</string>
+      </property>
+     </widget>
+    </item>
+    <item>
+     <widget class="QPushButton" name="pushButton_forgetPassword">
+      <property name="cursor">
+       <cursorShape>PointingHandCursor</cursorShape>
+      </property>
+      <property name="styleSheet">
+       <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+      </property>
+      <property name="text">
+       <string>忘记密码?</string>
+      </property>
+      <property name="autoDefault">
+       <bool>false</bool>
+      </property>
+      <property name="default">
+       <bool>false</bool>
+      </property>
+      <property name="flat">
+       <bool>true</bool>
+      </property>
+     </widget>
+    </item>
+   </layout>
   </widget>
  </widget>
  <resources/>

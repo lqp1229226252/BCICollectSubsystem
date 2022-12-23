@@ -1,0 +1,11 @@
+debug/bcimysql.o
+debug/jsonoperation.o
+debug/main.o
+debug/login.o
+debug/register.o
+debug/register_info.o
+debug/qrc_res.o
+debug/moc_bcimysql.o
+debug/moc_login.o
+debug/moc_register.o
+debug/moc_register_info.o

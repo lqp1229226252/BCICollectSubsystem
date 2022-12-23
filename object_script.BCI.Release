@@ -1,0 +1,11 @@
+release/bcimysql.o
+release/jsonoperation.o
+release/main.o
+release/login.o
+release/register.o
+release/register_info.o
+release/qrc_res.o
+release/moc_bcimysql.o
+release/moc_login.o
+release/moc_register.o
+release/moc_register_info.o

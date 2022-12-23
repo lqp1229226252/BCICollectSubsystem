@@ -1,6 +1,9 @@
-#include "login.h"
+﻿#include "login.h"
 
 #include <QApplication>
+
+#define CPU_SET(cpu, cpusetp) //设置cpu
+
 
 int main(int argc, char *argv[])
 {

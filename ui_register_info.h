@@ -15,6 +15,7 @@
 #include <QtWidgets/QHBoxLayout>
 #include <QtWidgets/QLabel>
 #include <QtWidgets/QLineEdit>
+#include <QtWidgets/QPushButton>
 #include <QtWidgets/QVBoxLayout>
 #include <QtWidgets/QWidget>
 
@@ -57,19 +58,27 @@ public:
     QLineEdit *lineEdit_game;
     QLineEdit *lineEdit_entertainment;
     QLineEdit *lineEdit_other;
+    QPushButton *pushButton_saveInfo;
 
     void setupUi(QWidget *Register_info)
     {
         if (Register_info->objectName().isEmpty())
             Register_info->setObjectName(QString::fromUtf8("Register_info"));
-        Register_info->resize(492, 402);
+        Register_info->resize(592, 650);
+        Register_info->setStyleSheet(QString::fromUtf8("*{font: 75 14pt \"Arial\";\n"
+"background-color: rgb(49, 52, 59);\n"
+"color: rgb(255, 255, 255);}\n"
+"\n"
+""));
         line = new QFrame(Register_info);
         line->setObjectName(QString::fromUtf8("line"));
-        line->setGeometry(QRect(3, 20, 491, 20));
+        line->setGeometry(QRect(3, 50, 681, 20));
         QFont font;
-        font.setPointSize(9);
+        font.setFamily(QString::fromUtf8("Arial"));
+        font.setPointSize(14);
         font.setBold(false);
-        font.setWeight(50);
+        font.setItalic(false);
+        font.setWeight(9);
         line->setFont(font);
         line->setStyleSheet(QString::fromUtf8("\n"
 "border-top:1.5px solid rgb(64,64,64);"));
@@ -77,10 +86,10 @@ public:
         line->setFrameShadow(QFrame::Sunken);
         label = new QLabel(Register_info);
         label->setObjectName(QString::fromUtf8("label"));
-        label->setGeometry(QRect(20, 0, 131, 21));
+        label->setGeometry(QRect(0, 0, 181, 51));
         layoutWidget = new QWidget(Register_info);
         layoutWidget->setObjectName(QString::fromUtf8("layoutWidget"));
-        layoutWidget->setGeometry(QRect(20, 20, 431, 381));
+        layoutWidget->setGeometry(QRect(30, 70, 501, 521));
         horizontalLayout = new QHBoxLayout(layoutWidget);
         horizontalLayout->setObjectName(QString::fromUtf8("horizontalLayout"));
         horizontalLayout->setContentsMargins(0, 0, 0, 0);
@@ -234,8 +243,38 @@ public:
 
         horizontalLayout->addLayout(verticalLayout_2);
 
+        pushButton_saveInfo = new QPushButton(Register_info);
+        pushButton_saveInfo->setObjectName(QString::fromUtf8("pushButton_saveInfo"));
+        pushButton_saveInfo->setGeometry(QRect(380, 590, 151, 51));
+        pushButton_saveInfo->setStyleSheet(QString::fromUtf8("\n"
+"QPushButton#pushButton_register{\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  rgb(6, 191, 255), stop:1 rgb(44, 114, 255) );\n"
+"	color: rgb(255, 255, 255);\n"
+"	border-radius:3px;		\n"
+"	font: 12pt \"Adobe \351\273\221\344\275\223 Std R\";\n"
+"}\n"
+"QPushButton#pushButton_register:hover{\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  rgb(20, 204, 255), stop:1 rgb(11, 141, 255) );\n"
+"	border-style:none;\n"
+"	border-radius:3px;\n"
+"	font: 12pt \"Adobe \351\273\221\344\275\223 Std R\";\n"
+"}\n"
+"\n"
+"QPushButton#pushButton_register:pressed{\n"
+"	\n"
+"	background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0  rgb(20, 204, 255), stop:0.5 rgb(5, 191, 255), stop:1 rgb(11, 141, 255) );\n"
+"	border-style:none;\n"
+"	border-radius:3px;	\n"
+"	font: 12pt \"Adobe \351\273\221\344\275\223 Std R\";\n"
+"}\n"
+""));
+        pushButton_saveInfo->setAutoDefault(false);
+        pushButton_saveInfo->setFlat(false);
 
         retranslateUi(Register_info);
+
+        pushButton_saveInfo->setDefault(false);
+
 
         QMetaObject::connectSlotsByName(Register_info);
     } // setupUi
@@ -258,6 +297,9 @@ public:
         label_14->setText(QCoreApplication::translate("Register_info", "\345\270\270\347\216\251\346\270\270\346\210\217(\347\261\273\345\236\213,\345\220\215\347\247\260)", nullptr));
         label_15->setText(QCoreApplication::translate("Register_info", "\346\227\245\345\270\270\345\250\261\344\271\220\346\226\271\345\274\217", nullptr));
         label_10->setText(QCoreApplication::translate("Register_info", "\345\205\266\344\273\226(\345\205\201\350\256\270\346\226\271\344\276\277\346\211\251\345\261\225)", nullptr));
+        lineEdit_sex->setPlaceholderText(QCoreApplication::translate("Register_info", "\342\200\230\347\224\267\342\200\231\346\210\226\342\200\230\345\245\263\342\200\231", nullptr));
+        lineEdit_handy->setPlaceholderText(QCoreApplication::translate("Register_info", "\342\200\230\345\267\246\342\200\231\346\210\226\342\200\230\345\217\263\342\200\231", nullptr));
+        pushButton_saveInfo->setText(QCoreApplication::translate("Register_info", "\344\277\235\345\255\230", nullptr));
     } // retranslateUi
 
 };

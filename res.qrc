@@ -4,5 +4,10 @@
         <file>image/er1.png</file>
         <file>image/er2.png</file>
         <file>image/min.png</file>
+        <file>image/Nj.png</file>
+        <file>image/close2.0.png</file>
+        <file>image/min2.0.png</file>
+        <file>image/QQ.png</file>
+        <file>image/wc.png</file>
     </qresource>
 </RCC>
