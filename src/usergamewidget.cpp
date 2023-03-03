@@ -7,7 +7,6 @@ UserGameWidget::UserGameWidget(QWidget *parent) :
 {
     ui->setupUi(this);
     initLayout();
-    setGameDynamic();
 }
 
 UserGameWidget::~UserGameWidget()
@@ -25,11 +24,13 @@ void UserGameWidget::addGamePlay(QList<GameData> data)
     {
         QListWidgetItem *item=new QListWidgetItem();
         GameItem *gameitem=new GameItem();
+
         QPixmap cover=(*begin).getCover();
         QString name=(*begin).getName();
         gameitem->setGameMsg(cover,name);
         gameitem->cancelName();
-        item->setSizeHint(QSize(gameitem->getCoverWidth(),cover.height()));
+        item->setSizeHint(QSize(180,70));
+
         ui->gameplay->addItem(item);
         ui->gameplay->setItemWidget(item,gameitem);
     }
@@ -45,7 +46,7 @@ void UserGameWidget::addGameUpdate(QList<GameData> data)
         QString name=(*begin).getName();
         gameitem->setGameMsg(cover,name);
         gameitem->cancelName();
-        item->setSizeHint(QSize(gameitem->getCoverWidth(),cover.height()));
+        item->setSizeHint(QSize(180,70));
         ui->gameupdate->addItem(item);
         ui->gameupdate->setItemWidget(item,gameitem);
     }
@@ -57,7 +58,8 @@ void UserGameWidget::addGame(QList<GameData> data)
     {
         QListWidgetItem *item=new QListWidgetItem();
         GameItem *gameitem=new GameItem();
-        gameitem->setGameMsg((*begin).getCover(),(*begin).getName());
+        gameitem->setGameMsg((*begin).getIcon(),(*begin).getName());
+        item->setSizeHint(QSize(ui->gameList->width(),30));
         ui->gameList->addItem(item);
         ui->gameList->setItemWidget(item,gameitem);
     }
@@ -78,11 +80,17 @@ void UserGameWidget::setGameOverview(QList<GameData> data)
 
 }
 
-void UserGameWidget::setGameDynamic()
+void UserGameWidget::setGameDynamic(QList<DynamicData> data)
 {
-    ui->gamedynamic->addItem(u8"官方发布的动态");
-    ui->gamedynamic->addItem(u8"游戏a需要更新");
-    ui->gamedynamic->addItem(u8"积分翻倍游戏活动");
+    for(QList<DynamicData>::iterator begin=data.begin();begin!=data.end();begin++)
+    {
+        QListWidgetItem *item=new QListWidgetItem();
+        DynamicItem *dynamicitem=new DynamicItem();
+        dynamicitem->setDynamicData((*begin));
+        item->setSizeHint(QSize(ui->gamedynamic->height(),ui->gamedynamic->height()-30));
+        ui->gamedynamic->addItem(item);
+        ui->gamedynamic->setItemWidget(item,dynamicitem);
+    }
 }
 void UserGameWidget::initLayout()
 {

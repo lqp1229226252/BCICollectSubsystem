@@ -22,9 +22,13 @@ public:
     QString getPlayrank();
     void setPlayrank(int value);
 
+    QPixmap getIcon() const;
+    void setIcon(const QPixmap &value);
+
 private:
     QString name;
     QPixmap cover;
+    QPixmap icon;
     int playtime;
     int playrank;
 };

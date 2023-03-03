@@ -311,17 +311,34 @@ QScrollArea QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical
         <number>0</number>
        </property>
        <item>
-        <widget class="QListWidget" name="gamedynamic">
-         <property name="styleSheet">
-          <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(49, 62, 83), stop:1 rgb(24, 29, 35));</string>
+        <layout class="QVBoxLayout" name="verticalLayout_3">
+         <property name="spacing">
+          <number>10</number>
          </property>
-         <property name="isWrapping" stdset="0">
-          <bool>false</bool>
-         </property>
-         <property name="viewMode">
-          <enum>QListView::ListMode</enum>
-         </property>
-        </widget>
+         <item>
+          <widget class="QLabel" name="label_8">
+           <property name="text">
+            <string>游戏新闻速递</string>
+           </property>
+          </widget>
+         </item>
+         <item>
+          <widget class="QListWidget" name="gamedynamic">
+           <property name="styleSheet">
+            <string notr="true">background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:0, stop:0 rgb(49, 62, 83), stop:1 rgb(24, 29, 35));</string>
+           </property>
+           <property name="flow">
+            <enum>QListView::LeftToRight</enum>
+           </property>
+           <property name="isWrapping" stdset="0">
+            <bool>false</bool>
+           </property>
+           <property name="viewMode">
+            <enum>QListView::IconMode</enum>
+           </property>
+          </widget>
+         </item>
+        </layout>
        </item>
        <item>
         <layout class="QVBoxLayout" name="gameoverviewLayout">

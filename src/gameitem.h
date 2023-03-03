@@ -17,6 +17,7 @@ public:
     void setGameMsg(QPixmap cover,QString name);
     void cancelName();
     int  getCoverWidth();
+    void mouseReleaseEvent(QMouseEvent *event) override;
 private:
     Ui::GameItem *ui;
 };

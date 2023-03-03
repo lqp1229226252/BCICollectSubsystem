@@ -60,3 +60,13 @@ void GameData::setPlayrank(int value)
 {
     playrank = value;
 }
+
+QPixmap GameData::getIcon() const
+{
+    return icon;
+}
+
+void GameData::setIcon(const QPixmap &value)
+{
+    icon = value;
+}

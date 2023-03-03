@@ -15,7 +15,6 @@ GameItem::~GameItem()
 
 void GameItem::setGameMsg(QPixmap cover, QString name)
 {
-    cover=cover.scaled(ui->cover->width(),ui->cover->height());
     this->ui->cover->setPixmap(cover);
     this->ui->name->setText(name);
 }
@@ -23,9 +22,14 @@ void GameItem::setGameMsg(QPixmap cover, QString name)
 void GameItem::cancelName()
 {
     delete  ui->name;
+    ui->name=NULL;
 }
 
 int GameItem::getCoverWidth()
 {
     return ui->cover->width();
+}
+void GameItem::mouseReleaseEvent(QMouseEvent *event)
+{
+    qDebug()<<"跳转游戏";
 }

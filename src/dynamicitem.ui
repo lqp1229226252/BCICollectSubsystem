@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <ui version="4.0">
- <class>GameItem</class>
- <widget class="QWidget" name="GameItem">
+ <class>DynamicItem</class>
+ <widget class="QWidget" name="DynamicItem">
   <property name="geometry">
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>449</width>
-    <height>77</height>
+    <width>400</width>
+    <height>300</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -30,28 +30,43 @@
     <number>0</number>
    </property>
    <item row="0" column="0">
-    <layout class="QHBoxLayout" name="horizontalLayout">
+    <layout class="QVBoxLayout" name="verticalLayout">
      <item>
-      <widget class="QLabel" name="cover">
+      <widget class="QLabel" name="date">
        <property name="text">
-        <string>TextLabel</string>
-       </property>
-       <property name="scaledContents">
-        <bool>false</bool>
+        <string/>
        </property>
       </widget>
      </item>
      <item>
-      <widget class="QLabel" name="name">
+      <widget class="QLabel" name="cover">
        <property name="text">
-        <string>TextLabel</string>
+        <string/>
        </property>
       </widget>
+     </item>
+     <item>
+      <widget class="QLabel" name="dynamicname">
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="GameItem" name="gamename" native="true"/>
      </item>
     </layout>
    </item>
   </layout>
  </widget>
+ <customwidgets>
+  <customwidget>
+   <class>GameItem</class>
+   <extends>QWidget</extends>
+   <header location="global">gameitem.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
  <resources/>
  <connections/>
 </ui>

@@ -6,6 +6,8 @@
 #include "gameoverviewitem.h"
 #include "gamedata.h"
 #include "gameitem.h"
+#include "dynamicdata.h"
+#include "dynamicitem.h"
 namespace Ui {
 class UserGameWidget;
 }
@@ -21,7 +23,7 @@ public:
     void addGameUpdate(QList<GameData> data);
     void addGame(QList<GameData> data);
     void setGameOverview(QList<GameData> data);
-    void setGameDynamic();
+    void setGameDynamic(QList<DynamicData> data);
 
 private:
     Ui::UserGameWidget *ui;
