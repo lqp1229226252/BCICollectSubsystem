@@ -1,0 +1,43 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/head.png</file>
+        <file>image/space.jpg</file>
+        <file>image/btn_click.png</file>
+        <file>image/btn_n.png</file>
+        <file>image/face.png</file>
+        <file>image/Rectangle 26.png</file>
+        <file>image/Rectangle 27.png</file>
+        <file>image/Rectangle 29.png</file>
+        <file>image/tz.png</file>
+        <file>image/close.png</file>
+        <file>image/max.png</file>
+        <file>image/min.png</file>
+        <file>image/QQ.png</file>
+        <file>image/Vector.png</file>
+        <file>image/wc.png</file>
+        <file>image/right.png</file>
+        <file>image/Frame.png</file>
+        <file>image/left.png</file>
+        <file>image/p1.png</file>
+        <file>image/p2.png</file>
+        <file>image/Group8.png</file>
+        <file>image/Group9.png</file>
+        <file>image/Group10.png</file>
+        <file>image/Group11.png</file>
+        <file>image/Group12.png</file>
+        <file>image/Group14.png</file>
+        <file>image/Group15.png</file>
+        <file>image/Rectangle 57.png</file>
+        <file>image/sy1.png</file>
+        <file>image/sy2.png</file>
+        <file>image/sy3.png</file>
+        <file>image/sy4.png</file>
+        <file>image/sy5.png</file>
+        <file>Image/Component 12.png</file>
+        <file>Image/1682402543607.png</file>
+    </qresource>
+    <qresource prefix="/">
+        <file>Image/er1.png</file>
+        <file>Image/er2.png</file>
+    </qresource>
+</RCC>
