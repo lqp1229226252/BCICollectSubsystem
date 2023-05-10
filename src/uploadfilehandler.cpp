@@ -22,36 +22,23 @@ void UploadFileHandler::init()
     ftpconfig = new FTPConfig;
 
     // 读配置文件
-    this->url = ftpconfig->getFTPConfig();
+//    this->url = ftpconfig->getFTPConfig();
+    setUrl(ftpconfig->getFTPConfig());
+
+    delete ftpconfig;
 }
 
 // 上传文件
 void UploadFileHandler::uploadFile(QString filePath)
 {
     QString fileName = filePath.split("/").last();
+    qDebug() << "UploadFileHandler::uploadFile--" << filePath;
 
     QString upPth = this->uploadPath + QString("/%1").arg(fileName);
+    qDebug() << "UploadFileHandler::uploadFile--" << upPth;
 
     put(filePath, upPth);
 }
-
-// 上传完成
-void UploadFileHandler::onUploadFinished()
-{
-    qDebug() << "upload Finished!";
-}
-
-QString UploadFileHandler::getUploadPath() const
-{
-    return uploadPath;
-}
-
-
-void UploadFileHandler::onErrorOccur(QNetworkReply::NetworkError error)
-{
-    qDebug() << error;
-}
-
 
 // 上传
 QNetworkReply *UploadFileHandler::put(const QString &localPath, const QString &uploadPath)
@@ -84,10 +71,24 @@ QNetworkReply *UploadFileHandler::put(const QString &localPath, const QString &u
     connect(reply, SIGNAL(finished()), this, SLOT(onUploadFinished()));
     connect(reply, SIGNAL(error(QNetworkReply::NetworkError)), this, SLOT(onErrorOccur(QNetworkReply::NetworkError)));
 
-    reply->deleteLater();
-
     file->close();
     return reply;
+}
+
+// 上传完成
+void UploadFileHandler::onUploadFinished()
+{
+    qDebug() << "upload Finished!";
+}
+
+QString UploadFileHandler::getUploadPath() const
+{
+    return uploadPath;
+}
+
+void UploadFileHandler::onErrorOccur(QNetworkReply::NetworkError error)
+{
+    qDebug() << error;
 }
 
 // 设置上传到服务器的目录

@@ -18,7 +18,7 @@ public:
     explicit UploadFileHandler(QObject *parent = nullptr);
     ~UploadFileHandler();
 
-    QNetworkAccessManager *manager;
+
 
     QUrl getUrl() const;
     void setUrl(const QUrl &value);
@@ -39,12 +39,13 @@ public slots:
 
 
 
-
     void onUploadFinished();
 
     void onErrorOccur(QNetworkReply::NetworkError error);
 
 private:
+
+    QNetworkAccessManager *manager;
     QUrl url;
     QString uploadPath;
     FTPConfig *ftpconfig;

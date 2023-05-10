@@ -3,7 +3,7 @@
 cmake_minimum_required(VERSION 3.5)
 
 #设置库的名字
-project(FTP)
+project(FTPUploadFile)
 
 set(CMAKE_INCLUDE_CURRENT_DIR ON)
 set(CMAKE_AUTOUIC ON)

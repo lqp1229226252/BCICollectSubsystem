@@ -16,6 +16,8 @@ public:
 
     UploadFileHandler *handler;
 
+    void upload(QString file);
+
 
 signals:
 

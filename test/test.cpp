@@ -9,9 +9,10 @@ test::test(QObject *parent) : QObject(parent)
 
 test::~test()
 {
-
+    delete handler;
 }
 
+// 初始化
 void test::init()
 {
     handler = new UploadFileHandler();
@@ -25,7 +26,13 @@ void test::init()
 
 //    handler->setUrl(url);
 
-    qDebug() << handler->getUrl();
+    qDebug() << "upload::" << handler->getUrl();
 
 
+}
+
+// 上传文件
+void test::upload(QString file)
+{
+    handler->uploadFile(file);
 }

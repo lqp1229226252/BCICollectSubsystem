@@ -9,5 +9,11 @@ int main(int argc, char *argv[])
 
     test t;
 
+    t.upload("D:/test/000.txt");
+    t.upload("D:/test/0.txt");
+
+    t.upload("D:/test/1.txt");
+
+
     return a.exec();
 }
