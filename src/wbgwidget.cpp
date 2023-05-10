@@ -66,7 +66,6 @@ void WBGWIdget::setConnect()
     connect(loginWidget,&login::LoginSucceedSignal,[=](QString account){
         this->account=account;  //登录成功后可以传来用户账号
         this->showMaximized();
-        initFTPSender();
     });
 
     //点击indexwidget的关闭按钮后关闭整个程序
@@ -164,15 +163,18 @@ void WBGWIdget::mouseReleaseEvent(QMouseEvent *event)
 
 void WBGWIdget::acceptGameAccount(QMap<QString, QString> map)
 {
+    QString account=map["Account"];
     QDir dir;
     saveMatPath+="temp";
     dir.mkdir(saveMatPath);
     saveMatPath+="/"+account;
     dir.mkdir(saveMatPath);
     saveMatPath+="/"+QDate::currentDate().toString("yyMMdd")+QTime::currentTime().toString("hhmmss");
-    QString account=map["Account"];
+    dir.mkdir(saveMatPath);
     int id=map["GameType"].toInt();
     bcimonitor->setFileMsg(saveMatPath,account,id);
+    bcimonitor->start();
+    initFTPSender();
 }
 
 void WBGWIdget::initGameEndWidget()
@@ -309,7 +311,7 @@ void WBGWIdget::setFTPReviceConnect()
 
 void WBGWIdget::initTCP()
 {
-    tcpserver=TcpServer::getInstance();
+    tcpserver=new TcpServer;
     tcpserver->tcpListen();
 }
 

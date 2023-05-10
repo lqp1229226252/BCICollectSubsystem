@@ -74,7 +74,7 @@ void FTPSender::onErrorOccur(QNetworkReply::NetworkError error)
 void FTPSender::onDirectoryChanged(QString fileName)
 {
     // 检查有无新文件
-    qDebug() << fileName;
+    qDebug() <<"ftp"<<fileName;
     QDir dir;
     dir.setPath(fileName);
     dir.setFilter(QDir::Files);

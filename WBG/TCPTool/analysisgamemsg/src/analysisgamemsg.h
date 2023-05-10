@@ -8,8 +8,6 @@ class AnalysisGameMsg:public QObject
 public:
     AnalysisGameMsg();
     void analysis(QString);
-    void analyGameStartMsg(QStringList);
-    void analyzeGameOverMsg(QStringList);
 signals:
     void gameFinish(QMap<QString,QString>);
     void gameStart(QMap<QString,QString>);

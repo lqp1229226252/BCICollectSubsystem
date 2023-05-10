@@ -7,34 +7,18 @@
 #include <QTcpSocket>
 #include <QtCore/QCoreApplication>
 
-TcpServer* TcpServer::self = NULL;
-QTcpServer* TcpServer::tcpServer = NULL;
-
-TcpServer *TcpServer::getInstance()
+TcpServer::TcpServer()
 {
-    //判断是否是第一次调用
-    //假如不为NULL,会直接return
-    if (self == NULL) {
-
-        //防止多进程同时调用创建2个对象的问题
-        //原理是因为是静态变量只会定义一次
-        static QMutex mutex;
-
-        //上锁  QMutexLocker会锁住mutex，当QMutexLocker 被释放的时候会自动解锁
-        //locker是局部变量，所以getInstance（）函数结束之后会自动解锁
-        QMutexLocker locker(&mutex);
-
-        //再判断一次,防止其它进程抢先new过了
-        if (self == NULL) {
-            self = new TcpServer();
-            tcpServer = new QTcpServer(self);
-
-        }
-    }
-
-    return self; //返回指针
+    analysisGameMsg=new AnalysisGameMsg;
+    tcpServer=new QTcpServer();
+    connect(analysisGameMsg, &AnalysisGameMsg::gameFinish, this, &TcpServer::gameFinish);
+    connect(analysisGameMsg, &AnalysisGameMsg::gameStart, this, &TcpServer::gameStart);
+    connect(analysisGameMsg, &AnalysisGameMsg::gameEnemyBorn, this, &TcpServer::gameEnemyBorn);
+    connect(analysisGameMsg, &AnalysisGameMsg::gameEnemyDie, this, &TcpServer::gameEnemyDie);
+    connect(analysisGameMsg, &AnalysisGameMsg::gameFireHit, this, &TcpServer::gameFireHit);
+    connect(analysisGameMsg, &AnalysisGameMsg::gameFireMiss, this, &TcpServer::gameFireMiss);
+    connect(analysisGameMsg, &AnalysisGameMsg::gameCutHit, this, &TcpServer::gameCutHit);
 }
-
 // 开始监听
 void TcpServer::tcpListen()
 {
@@ -84,13 +68,6 @@ void TcpServer::readyReadData()
 //    qDebug() << curClient->readAll();
     analysisGameMsg->analysis(curClient->readAll());
 //    emit recvDataSignal(curClient->readAll());
-    connect(analysisGameMsg, &AnalysisGameMsg::gameFinish, self, &TcpServer::gameFinish);
-    connect(analysisGameMsg, &AnalysisGameMsg::gameStart, self, &TcpServer::gameStart);
-    connect(analysisGameMsg, &AnalysisGameMsg::gameEnemyBorn, self, &TcpServer::gameEnemyBorn);
-    connect(analysisGameMsg, &AnalysisGameMsg::gameEnemyDie, self, &TcpServer::gameEnemyDie);
-    connect(analysisGameMsg, &AnalysisGameMsg::gameFireHit, self, &TcpServer::gameFireHit);
-    connect(analysisGameMsg, &AnalysisGameMsg::gameFireMiss, self, &TcpServer::gameFireMiss);
-    connect(analysisGameMsg, &AnalysisGameMsg::gameCutHit, self, &TcpServer::gameCutHit);
 }
 
 
