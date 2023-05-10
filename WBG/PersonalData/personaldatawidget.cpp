@@ -82,6 +82,7 @@ void PersonalDataWidget::initDatas()
 {
     QString newFilePath = getNewBCIFile();
     QMap<QString, double> initChartDatas = readNewBCIFileContent(newFilePath);
+
     if(initChartDatas.size()!=0){
         parseChartDatas(initChartDatas);
     }
@@ -258,8 +259,8 @@ void PersonalDataWidget::parseChartDatas(QMap<QString, double> radarData)
     }if(radarData.contains("MotorCoordination")){
         addChartValue(0, radarData, "MotorCoordination");
     }
-    if(radarData.contains("Cognitive")){
-        addChartValue(0, radarData, "Cognitive");
+    if(radarData.contains("ComprehensiveCognitive")){
+        addChartValue(0, radarData, "ComprehensiveCognitive");
     }
     if(radarData.contains("Stress")){
         addChartValue(1, radarData, "Stress");

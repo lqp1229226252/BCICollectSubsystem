@@ -307,6 +307,7 @@ void WBGWIdget::initFTPRevice()
 void WBGWIdget::setFTPReviceConnect()
 {
     connect(ftprevice,&SaveFileToBCI::TcpControlMessageReady,tcpserver,&TcpServer::tcpSendContent);
+    connect(ftprevice,&SaveFileToBCI::RadarDataReady,personalDataWidget,&PersonalDataWidget::getRecChartDatas);
 }
 
 void WBGWIdget::initTCP()

@@ -44,6 +44,8 @@ public:
     int getCurrentRightChartType() const;
     void setCurrentRightChartType(int value);
 
+public slots:
+    void getRecChartDatas(QMap<QString,double> radarData);
 private slots:
 
 //    void on_chart_change_left_currentIndexChanged(int index);
@@ -78,7 +80,6 @@ private:
     void initChart();
     void initCart();
     void repaintChart();
-    void getRecChartDatas(QMap<QString,double> radarData);
     void parseChartDatas(QMap<QString,double> radarData);
 
 //    void timerEvent(QTimerEvent *event) override;

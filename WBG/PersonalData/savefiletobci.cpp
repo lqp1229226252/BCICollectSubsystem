@@ -12,7 +12,7 @@ void SaveFileToBCI::test(){
     //设置本地ftp服务器路径
     setFTPSavePath("D:/BCIData/FTP-Receive");
     //设置本地保存xxx.bci文件路径
-    setLocalSavePath("D:/BCIData/FTP-LocalSave");
+    setLocalSavePath("D:/BCIData/ b");
 
     //若无则创建
     //isDirExist(FTPFileDir);
