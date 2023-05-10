@@ -1,0 +1,4 @@
+D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/FtpServer.dir
+D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/edit_cache.dir
+D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/rebuild_cache.dir
+D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/FtpServer_autogen.dir

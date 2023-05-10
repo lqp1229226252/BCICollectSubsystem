@@ -1,0 +1,18 @@
+# ninja log v5
+4	266	0	FtpServer_autogen/mocs_compilation.cpp	621b13082e712761
+287	1530	705391891	CMakeFiles/FtpServer.dir/ftpServer/ftpretrcommand.cpp.obj	3e314529df99ea54
+4	266	0	D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer_autogen/mocs_compilation.cpp	621b13082e712761
+303	1498	705391891	CMakeFiles/FtpServer.dir/ftpServer/ftpserver.cpp.obj	ddbdae4654b9cffd
+266	1451	705391891	CMakeFiles/FtpServer.dir/ftpServer/ftpcommand.cpp.obj	e1f22fcd1f506fde
+273	1470	705391891	CMakeFiles/FtpServer.dir/ftpServer/dataconnection.cpp.obj	912f505acf50da32
+329	1714	705391891	CMakeFiles/FtpServer.dir/ftpServer/ftpstorcommand.cpp.obj	5c3db1e9af67ba24
+310	1499	705391891	CMakeFiles/FtpServer.dir/ftpServer/ftplistcommand.cpp.obj	d82f1bf139b3813b
+295	1599	705391891	CMakeFiles/FtpServer.dir/ftpServer/ftpcontrolconnection.cpp.obj	9251ec257990957e
+321	1762	705391892	CMakeFiles/FtpServer.dir/main.cpp.obj	f8a284256db34891
+280	1798	705391892	CMakeFiles/FtpServer.dir/FtpServer_autogen/mocs_compilation.cpp.obj	d9828ad55eb24002
+337	1812	705391892	CMakeFiles/FtpServer.dir/ftpserverwidget.cpp.obj	be7ddbc05098dc5d
+1812	2330	705391892	FtpServer.exe	83edde9a61543198
+4	80	0	CMakeFiles/FtpServer_autogen	621b13082e712761
+4	80	0	FtpServer_autogen/mocs_compilation.cpp	621b13082e712761
+4	80	0	D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/FtpServer_autogen	621b13082e712761
+4	80	0	D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer_autogen/mocs_compilation.cpp	621b13082e712761
