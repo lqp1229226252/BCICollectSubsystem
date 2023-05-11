@@ -1,0 +1,126 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=bar-polar-stack-radial&theme=dark&code=PYBwLglsB2AEC8sDeAoWsCG0DmAbApgIIAeEAzgFzJrqxgCeI-VA5AMYZj7bABO9LADQ10AE04YqAbRaAUvUAD9oC59QGV6Q2C0CjBoCu_QHo6gcgM1LQCSqgJMTVg9YGuNQCg2gFhtAznqHA0cqBspRUsAujQC-w9AEh0MGBgXEgQKlR_fzBeCGxsfF5WDFIyFhRA2F8aXgxRCABXMhJySJz0EFCMZOQK2DIkiHxKWCkRalpaBiZWACMaoQ6xCWkARgsAJgsAZgsAFgsxjz8u2DYQ3gLoTnwAZXoyLgBbVircQdWunePmdT2N3nwhtdgIE72GAkjM6KyN3B8Vi8bADAAUY3mi1gkxmAA4llCLAAGAB0AE4AJQZP7-HJ_C59fC4H64mL4YhgT70b7IABmMCpEAAXncxgA2by_aLoepdI4YNgAaxSLzW-GOIAAFhgyGVOq9YAy2MVWI04i0Mq8uV0dbAVjQCIloKIfvypcAAO5UWKFfBXWDiMCSNosB58Z5eXkobwAbiAA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, 'dark', {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+
+    function init(){
+		var option;
+
+		option = {
+	  angleAxis: {
+		type: 'category',
+		data: ['应激强度', '情绪属性', '唤醒度', '士气水平', '压力强度']
+	  },
+		  tooltip: {
+			trigger: 'axis'
+		  },
+	  radiusAxis: {},
+	  polar: {},
+	  series: [
+		{
+		  type: 'bar',
+		  data: [10, 20, 30, 40, 50],
+		  coordinateSystem: 'polar',
+		  name: 'Score',
+		  itemStyle: {
+					  color: 'rgba(144, 238, 144, 0.9)'
+					},
+				label: {
+						textStyle: {fontSize: 16}
+					  },
+		  stack: 'a',
+		  emphasis: {
+			focus: 'series'
+		  }
+		}
+	  ],
+	  legend: {
+		show: true,
+		data: ['Score']
+	  }
+		};
+
+		if (option && typeof option === 'object') {
+		  myChart.setOption(option);
+		}
+	}
+	function init2(str){
+		var option;
+
+		option = {
+	  angleAxis: {
+		type: 'category',
+		data: ['应激强度', '情绪属性', '唤醒度', '士气水平', '压力强度']
+	  },
+		  tooltip: {
+			trigger: 'axis'
+		  },
+	  radiusAxis: {},
+	  polar: {},
+	  series: [
+		{
+		  type: 'bar',
+		  data: str["data"],
+		  coordinateSystem: 'polar',
+		  name: 'Score',
+		  itemStyle: {
+					  color: 'rgba(144, 238, 144, 0.9)'
+					},
+				label: {
+						textStyle: {fontSize: 16}
+					  },
+		  stack: 'a',
+		  emphasis: {
+			focus: 'series'
+		  }
+		}
+	  ],
+	  legend: {
+		show: true,
+		data: ['Score']
+	  }
+		};
+
+		if (option && typeof option === 'object') {
+		  myChart.setOption(option);
+		}
+	}
+    window.onresize = myChart.resize ;
+	init();
+  </script>
+</body>
+</html>

@@ -1,0 +1,177 @@
+<!--
+	此示例下载自 https://echarts.apache.org/examples/zh/editor.html?c=pictorialBar-dotted&theme=dark&code=PTAEHEFMDtIJwIYBdKgCbIQWAFABtIlQBjZSAcwHs4BPUAXlAG0ByQaOVBspUC59QMr0WAaUC0ApeoAH7XgKGBRg0BXfoD0dQOQGkloBJVQEmJfQS0DXGoBQbQCw2gZz0WAXQDcuEKEoAHJAEtK0XLYdOGoAN65QoAEYIxADW5HCUAK7QaADClHjUAFxCAMQADABmAMwA7ACs6QI-oEiUcQ42Sd44vr5IcPbk5PBJLAgAHvYAzoXVNe1dAAqU9tAocJVFNcU0NpAtnQAWCGiUAO4sk6AAvkVb_EUETVETvb4YSAhJrHgjkMoBcKb7p8WQbUgAykg0BCdTvsQ4okUsRQRsXjtensim0AIIdTp_GrnS4kMhUWjPKb9ToAGVuSKmN1gXx-cy8mymgPi4xBYMp202kN80N6NHhXUJoE6NhuSHxsEq3IWayS6QQeE6qFZ2IRAvJVX-oGJkFJvwpLypQNpLGSoOI4KVzJqxpl3Pg9kgiOYm0V_2gCAAtuSWCqekrvrMWm6sf9Oo7SkgFkk6uFIL6pos1rC8HgPjRHX44iG4GGIzVOgmk3gWpBHXYaNF7HBiAR3X6s3EPvYAF7kgCMuXTZ0wV3rqX4ACYO5kOwAWDu5VImJnpu1TB3OloPctTT0umfN_wIOAAdXsaCDSQHS_sKEdaoVDN8SbgaHgACVlvZwtam8eSNqkrBVqBIMQlnAkJ0AHShBA2As9jED-8oruAiBoJaowABQdqA8HwfWghMA-vieNY6TpFKSBJPB1LArq9Z9sQAAcaB9iw2xLlMGGUFhOFJMhj40i0yR9pkkDvgAbFRxpKiYACUDJmlMKJth23b8L2_A7kOI4QkUClbGYQA
+	⚠ 请注意，该图表不是 Apache ECharts 官方示例，而是由用户代码生成的。请注意鉴别其内容。
+-->
+<!DOCTYPE html>
+<html lang="zh-CN" style="height: 100%">
+<head>
+  <meta charset="utf-8">
+</head>
+<body style="height: 100%; margin: 0">
+  <div id="container" style="height: 100%"></div>
+
+  
+  <script type="text/javascript" src="echarts.min.js"></script>
+  <!-- Uncomment this line if you want to dataTool extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/extension/dataTool.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use gl extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-gl@2/dist/echarts-gl.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to echarts-stat extension
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts-stat@latest/dist/ecStat.min.js"></script>
+  -->
+  <!-- Uncomment this line if you want to use map
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/china.js"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@4.9.0/map/js/world.js"></script>
+  -->
+  <!-- Uncomment these two lines if you want to use bmap extension
+  <script type="text/javascript" src="https://api.map.baidu.com/api?v=3.0&ak=YOUR_API_KEY"></script>
+  <script type="text/javascript" src="https://fastly.jsdelivr.net/npm/echarts@5.4.2/dist/extension/bmap.min.js"></script>
+  -->
+
+  <script type="text/javascript">
+    var dom = document.getElementById('container');
+    var myChart = echarts.init(dom, 'dark', {
+      renderer: 'canvas',
+      useDirtyRect: false
+    });
+	function init(){
+		var option;
+
+			// Generate data
+		let category = ['压力强度', '应激强度', '情绪属性', '唤醒度', '士气水平'];
+		// option
+		option = {
+		  backgroundColor: '#0f375f',
+		  tooltip: {
+			trigger: 'axis',
+			axisPointer: {
+			  type: 'shadow'
+			}
+		  },
+		  legend: {
+			data: ['line', 'bar'],
+			textStyle: {
+			  color: '#ccc'
+			}
+		  },
+		  xAxis: {
+			data: category,
+			axisLine: {
+			  lineStyle: {
+				color: '#ccc'
+			  }
+			}
+		  },
+		  yAxis: {
+			splitLine: { show: false },
+			axisLine: {
+			  lineStyle: {
+				color: '#ccc'
+			  }
+			}
+		  },
+		  series: [
+			{
+			  name: 'line',
+			  type: 'line',
+			  smooth: true,
+			  showAllSymbol: true,
+			  symbol: 'emptyCircle',
+			  symbolSize: 15,
+			  data: [10,20,30,40,50]
+			},
+			{
+			  name: 'bar',
+			  type: 'bar',
+			  barWidth: 40,
+			  itemStyle: {
+				borderRadius: 5,
+				color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+				  { offset: 0, color: '#14c8d4' },
+				  { offset: 1, color: '#43eec6' }
+				])
+			  },
+			  data: [10,20,30,40,50]
+			}
+		  ]
+		};
+
+
+			if (option && typeof option === 'object') {
+			  myChart.setOption(option);
+			}
+	}
+	function init2(str){
+	var option;
+
+		// Generate data
+	let category = ['压力强度', '应激强度', '情绪属性', '唤醒度', '士气水平'];
+	// option
+	option = {
+	  backgroundColor: '#0f375f',
+	  tooltip: {
+		trigger: 'axis',
+		axisPointer: {
+		  type: 'shadow'
+		}
+	  },
+	  legend: {
+		data: ['line', 'bar'],
+		textStyle: {
+		  color: '#ccc'
+		}
+	  },
+	  xAxis: {
+		data: category,
+		axisLine: {
+		  lineStyle: {
+			color: '#ccc'
+		  }
+		}
+	  },
+	  yAxis: {
+		splitLine: { show: false },
+		axisLine: {
+		  lineStyle: {
+			color: '#ccc'
+		  }
+		}
+	  },
+	  series: [
+		{
+		  name: 'line',
+		  type: 'line',
+		  smooth: true,
+		  showAllSymbol: true,
+		  symbol: 'emptyCircle',
+		  symbolSize: 15,
+		  data: str["data"]
+		},
+		{
+		  name: 'bar',
+		  type: 'bar',
+		  barWidth: 40,
+		  itemStyle: {
+			borderRadius: 5,
+			color: new echarts.graphic.LinearGradient(0, 0, 0, 1, [
+			  { offset: 0, color: '#14c8d4' },
+			  { offset: 1, color: '#43eec6' }
+			])
+		  },
+		  data: str["data"]
+		}
+	  ]
+	};
+
+
+		if (option && typeof option === 'object') {
+		  myChart.setOption(option);
+		}
+	}
+    window.onresize = myChart.resize ;
+	init();
+  </script>
+</body>
+</html>
