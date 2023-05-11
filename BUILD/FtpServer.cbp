@@ -2,13 +2,13 @@
 <CodeBlocks_project_file>
 	<FileVersion major="1" minor="6"/>
 	<Project>
-		<Option title="FtpServer"/>
+		<Option title="FTPServer"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="msvc8"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\QT5_14\;CMake Files\..\..\..\..\QT5_14\5.14.2\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Network\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Widgets\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\QT5_14\;CMake Files\..\..\..\..\QT5_14\5.14.2\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Core\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Network\;CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Widgets\;CMake Files\test\;"/>
 		<Build>
 			<Target title="all">
-				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD"/>
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v all"/>
@@ -17,28 +17,29 @@
 					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="FtpServer">
-				<Option output="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD"/>
+			<Target title="FTPServer">
+				<Option output="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/FTPServer.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_NETWORK_LIB"/>
-					<Add option="-DQT_WIDGETS_LIB"/>
-					<Add directory="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD"/>
-					<Add directory="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer"/>
-					<Add directory="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer_autogen/include"/>
-					<Add directory="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/./ftpServer"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/FTPServer_autogen/include"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/./src"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtCore"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/./mkspecs/win32-msvc"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtWidgets"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtGui"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtANGLE"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtNetwork"/>
-					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtWidgets"/>
 					<Add directory="D:\visual studio\vs2017\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
 					<Add directory="D:\visual studio\vs2017\VC\Tools\MSVC\14.16.27023\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
@@ -49,34 +50,35 @@
 					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FtpServer"/>
+					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FTPServer"/>
 					<CompileFile command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
 					<Clean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
 					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="FtpServer/fast">
-				<Option output="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer.exe" prefix_auto="0" extension_auto="0"/>
-				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD"/>
+			<Target title="FTPServer/fast">
+				<Option output="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/FTPServer.lib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
 				<Option object_output="./"/>
-				<Option type="1"/>
+				<Option type="2"/>
 				<Option compiler="msvc8"/>
 				<Compiler>
 					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
 					<Add option="-DQT_GUI_LIB"/>
 					<Add option="-DQT_NETWORK_LIB"/>
-					<Add option="-DQT_WIDGETS_LIB"/>
-					<Add directory="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD"/>
-					<Add directory="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer"/>
-					<Add directory="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer_autogen/include"/>
-					<Add directory="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/./ftpServer"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/FTPServer_autogen/include"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/./src"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtCore"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/./mkspecs/win32-msvc"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtWidgets"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtGui"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtANGLE"/>
 					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtNetwork"/>
-					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtWidgets"/>
 					<Add directory="D:\visual studio\vs2017\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
 					<Add directory="D:\visual studio\vs2017\VC\Tools\MSVC\14.16.27023\include"/>
 					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
@@ -87,14 +89,24 @@
 					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
 				</Compiler>
 				<MakeCommands>
-					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FtpServer/fast"/>
+					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FTPServer/fast"/>
+					<CompileFile command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
+					<Clean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
+					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="test">
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v test"/>
 					<CompileFile command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
 					<Clean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
 					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
 			<Target title="edit_cache">
-				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD"/>
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v edit_cache"/>
@@ -104,7 +116,7 @@
 				</MakeCommands>
 			</Target>
 			<Target title="rebuild_cache">
-				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD"/>
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
 				<Option type="4"/>
 				<MakeCommands>
 					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v rebuild_cache"/>
@@ -113,184 +125,278 @@
 					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
-			<Target title="FtpServer_autogen">
-				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD"/>
+			<Target title="FTPServer_autogen">
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD"/>
 				<Option type="4"/>
 				<MakeCommands>
-					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FtpServer_autogen"/>
+					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FTPServer_autogen"/>
+					<CompileFile command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
+					<Clean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
+					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FTPServerTest">
+				<Option output="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/FTPServerTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/test"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/FTPServerTest_autogen/include"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/./src"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtCore"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/./mkspecs/win32-msvc"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtWidgets"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtGui"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtANGLE"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtNetwork"/>
+					<Add directory="D:\visual studio\vs2017\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="D:\visual studio\vs2017\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FTPServerTest"/>
+					<CompileFile command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
+					<Clean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
+					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FTPServerTest/fast">
+				<Option output="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/FTPServerTest.exe" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test"/>
+				<Option object_output="./"/>
+				<Option type="1"/>
+				<Option compiler="msvc8"/>
+				<Compiler>
+					<Add option="-DQT_CORE_LIB"/>
+					<Add option="-DQT_NO_DEBUG"/>
+					<Add option="-DQT_WIDGETS_LIB"/>
+					<Add option="-DQT_GUI_LIB"/>
+					<Add option="-DQT_NETWORK_LIB"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/test"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/FTPServerTest_autogen/include"/>
+					<Add directory="D:/BCI_Project/FTP/FTP-Server/FtpServer/./src"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtCore"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/./mkspecs/win32-msvc"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtWidgets"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtGui"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtANGLE"/>
+					<Add directory="D:/QT5_14/5.14.2/msvc2017/include/QtNetwork"/>
+					<Add directory="D:\visual studio\vs2017\VC\Tools\MSVC\14.16.27023\ATLMFC\include"/>
+					<Add directory="D:\visual studio\vs2017\VC\Tools\MSVC\14.16.27023\include"/>
+					<Add directory="C:\Program Files (x86)\Windows Kits\NETFXSDK\4.6.1\include\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\ucrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\shared"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\um"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\winrt"/>
+					<Add directory="D:\Windows Kits\10\include\10.0.19041.0\cppwinrt"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FTPServerTest/fast"/>
+					<CompileFile command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
+					<Clean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
+					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="FTPServerTest_autogen">
+				<Option working_dir="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v FTPServerTest_autogen"/>
 					<CompileFile command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v &quot;$file&quot;"/>
 					<Clean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
 					<DistClean command="D:/visual studio/vs2017/Common7/IDE/CommonExtensions/Microsoft/CMake/Ninja/ninja.exe -v clean"/>
 				</MakeCommands>
 			</Target>
 		</Build>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer_autogen/mocs_compilation.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/FTPServer_autogen/mocs_compilation.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/dataconnection.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/FTPServerTest_autogen/mocs_compilation.cpp">
+			<Option target="FTPServerTest"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/dataconnection.h">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/dataconnection.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpcommand.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/dataconnection.h">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpcommand.h">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpcommand.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpcontrolconnection.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpcommand.h">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpcontrolconnection.h">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpcontrolconnection.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftplistcommand.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpcontrolconnection.h">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftplistcommand.h">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftplistcommand.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpretrcommand.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftplistcommand.h">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpretrcommand.h">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpretrcommand.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpserver.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpretrcommand.h">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpserver.h">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpserver.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpstorcommand.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpserver.h">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpstorcommand.h">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpserverwidget.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpserverwidget.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpserverwidget.h">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpserverwidget.h">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpstorcommand.cpp">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/main.cpp">
-			<Option target="FtpServer"/>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpstorcommand.h">
+			<Option target="FTPServer"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/CMakeLists.txt">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/test/main.cpp">
+			<Option target="FTPServerTest"/>
+		</Unit>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5/Qt5Config.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5/Qt5Config.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5/Qt5ConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5/Qt5ModuleLocation.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreConfigExtrasMkspecDir.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Core/Qt5CoreMacros.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Core\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5GuiConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5GuiConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5GuiConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QGifPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QICNSPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QICOPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QJpegPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QMinimalIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QOffscreenIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QSvgIconPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QSvgPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QTgaPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QTiffPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QTuioTouchPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QVirtualKeyboardPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWbmpPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWebGLIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWebpPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWindowsDirect2DIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QWindowsIntegrationPlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Gui/Qt5Gui_QXdgDesktopPortalThemePlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Gui\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Network/Qt5NetworkConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Network\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Network/Qt5NetworkConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Network\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Network/Qt5Network_QGenericEnginePlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Network\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsConfig.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsConfigExtras.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsConfigVersion.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Widgets\"/>
 		</Unit>
-		<Unit filename="D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake">
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/../../../../QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5Widgets_QWindowsVistaStylePlugin.cmake">
 			<Option virtualFolder="CMake Files\..\..\..\..\QT5_14\5.14.2\msvc2017\lib\cmake\Qt5Widgets\"/>
+		</Unit>
+		<Unit filename="D:/BCI_Project/FTP/FTP-Server/FtpServer/test/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\test\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

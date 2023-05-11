@@ -1,15 +1,16 @@
 {
-	"BUILD_DIR" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer_autogen",
-	"CMAKE_BINARY_DIR" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD",
-	"CMAKE_CURRENT_BINARY_DIR" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD",
-	"CMAKE_CURRENT_SOURCE_DIR" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer",
+	"BUILD_DIR" : "D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/FTPServer_autogen",
+	"CMAKE_BINARY_DIR" : "D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD",
+	"CMAKE_CURRENT_BINARY_DIR" : "D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD",
+	"CMAKE_CURRENT_SOURCE_DIR" : "D:/BCI_Project/FTP/FTP-Server/FtpServer",
 	"CMAKE_EXECUTABLE" : "D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/bin/cmake.exe",
 	"CMAKE_LIST_FILES" : 
 	[
-		"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/CMakeLists.txt",
-		"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/3.26.0-rc6/CMakeSystem.cmake",
+		"D:/BCI_Project/FTP/FTP-Server/FtpServer/CMakeLists.txt",
+		"D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/3.26.0-rc6/CMakeSystem.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeSystemSpecificInitialize.cmake",
-		"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/3.26.0-rc6/CMakeCXXCompiler.cmake",
+		"D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/3.26.0-rc6/CMakeCCompiler.cmake",
+		"D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/3.26.0-rc6/CMakeCXXCompiler.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeSystemSpecificInformation.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeGenericSystem.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeInitializeConfigs.cmake",
@@ -18,6 +19,16 @@
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeFindCodeBlocks.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/ProcessorCount.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeCInformation.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Compiler/MSVC-C.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Compiler/MSVC.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Platform/Windows-MSVC-C.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Platform/Windows-MSVC.cmake",
+		"D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/3.26.0-rc6/CMakeRCCompiler.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeRCInformation.cmake",
+		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeCXXInformation.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeLanguageInformation.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Compiler/MSVC-CXX.cmake",
@@ -25,8 +36,6 @@
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Compiler/CMakeCommonCompilerMacros.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Platform/Windows-MSVC-CXX.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/Platform/Windows-MSVC.cmake",
-		"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/3.26.0-rc6/CMakeRCCompiler.cmake",
-		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeRCInformation.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeCommonLanguageInclude.cmake",
 		"D:/QT5_14/5.14.2/msvc2017/lib/cmake/Qt5/Qt5ConfigVersion.cmake",
 		"D:/QT5_14/5.14.2/msvc2017/lib/cmake/Qt5/Qt5Config.cmake",
@@ -68,68 +77,69 @@
 		"D:/QT5_14/5.14.2/msvc2017/lib/cmake/Qt5Widgets/Qt5WidgetsMacros.cmake",
 		"D:/cmake-3.26.0-rc6-windows-x86_64/cmake-3.26.0-rc6-windows-x86_64/share/cmake-3.26/Modules/CMakeParseArguments.cmake"
 	],
-	"CMAKE_SOURCE_DIR" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer",
+	"CMAKE_SOURCE_DIR" : "D:/BCI_Project/FTP/FTP-Server/FtpServer",
 	"DEP_FILE" : "",
 	"DEP_FILE_RULE_NAME" : "",
 	"HEADERS" : 
 	[
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/dataconnection.h",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/dataconnection.h",
 			"MU",
-			"TTZUDLFCMH/moc_dataconnection.cpp",
+			"UVLADIE3JM/moc_dataconnection.cpp",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpcommand.h",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpcommand.h",
 			"MU",
-			"TTZUDLFCMH/moc_ftpcommand.cpp",
+			"UVLADIE3JM/moc_ftpcommand.cpp",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpcontrolconnection.h",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpcontrolconnection.h",
 			"MU",
-			"TTZUDLFCMH/moc_ftpcontrolconnection.cpp",
+			"UVLADIE3JM/moc_ftpcontrolconnection.cpp",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftplistcommand.h",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftplistcommand.h",
 			"MU",
-			"TTZUDLFCMH/moc_ftplistcommand.cpp",
+			"UVLADIE3JM/moc_ftplistcommand.cpp",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpretrcommand.h",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpretrcommand.h",
 			"MU",
-			"TTZUDLFCMH/moc_ftpretrcommand.cpp",
+			"UVLADIE3JM/moc_ftpretrcommand.cpp",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpserver.h",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpserver.h",
 			"MU",
-			"TTZUDLFCMH/moc_ftpserver.cpp",
+			"UVLADIE3JM/moc_ftpserver.cpp",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpstorcommand.h",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpserverwidget.h",
 			"MU",
-			"TTZUDLFCMH/moc_ftpstorcommand.cpp",
+			"UVLADIE3JM/moc_ftpserverwidget.cpp",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpserverwidget.h",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpstorcommand.h",
 			"MU",
-			"EWIEGA46WW/moc_ftpserverwidget.cpp",
+			"UVLADIE3JM/moc_ftpstorcommand.cpp",
 			null
 		]
 	],
 	"HEADER_EXTENSIONS" : [ "h", "hh", "h++", "hm", "hpp", "hxx", "in", "txx" ],
-	"INCLUDE_DIR" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer_autogen/include",
-	"MOC_COMPILATION_FILE" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/FtpServer_autogen/mocs_compilation.cpp",
+	"INCLUDE_DIR" : "D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/FTPServer_autogen/include",
+	"MOC_COMPILATION_FILE" : "D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/FTPServer_autogen/mocs_compilation.cpp",
 	"MOC_DEFINITIONS" : 
 	[
 		"QT_CORE_LIB",
 		"QT_GUI_LIB",
 		"QT_NETWORK_LIB",
+		"QT_NO_DEBUG",
 		"QT_WIDGETS_LIB",
 		"WIN32"
 	],
@@ -142,16 +152,16 @@
 	],
 	"MOC_INCLUDES" : 
 	[
-		"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD",
-		"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer",
-		"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer",
+		"D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD",
+		"D:/BCI_Project/FTP/FTP-Server/FtpServer",
+		"D:/BCI_Project/FTP/FTP-Server/FtpServer/src",
 		"D:/QT5_14/5.14.2/msvc2017/include",
 		"D:/QT5_14/5.14.2/msvc2017/include/QtCore",
 		"D:/QT5_14/5.14.2/msvc2017/mkspecs/win32-msvc",
+		"D:/QT5_14/5.14.2/msvc2017/include/QtWidgets",
 		"D:/QT5_14/5.14.2/msvc2017/include/QtGui",
 		"D:/QT5_14/5.14.2/msvc2017/include/QtANGLE",
-		"D:/QT5_14/5.14.2/msvc2017/include/QtNetwork",
-		"D:/QT5_14/5.14.2/msvc2017/include/QtWidgets"
+		"D:/QT5_14/5.14.2/msvc2017/include/QtNetwork"
 	],
 	"MOC_MACRO_NAMES" : [ "Q_OBJECT", "Q_GADGET", "Q_NAMESPACE", "Q_NAMESPACE_EXPORT" ],
 	"MOC_OPTIONS" : [],
@@ -162,55 +172,54 @@
 	"MOC_SKIP" : [],
 	"MULTI_CONFIG" : false,
 	"PARALLEL" : 8,
-	"PARSE_CACHE_FILE" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/FtpServer_autogen.dir/ParseCache.txt",
+	"PARSE_CACHE_FILE" : "D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/FTPServer_autogen.dir/ParseCache.txt",
 	"QT_MOC_EXECUTABLE" : "D:/QT5_14/5.14.2/msvc2017/bin/moc.exe",
 	"QT_UIC_EXECUTABLE" : "D:/QT5_14/5.14.2/msvc2017/bin/uic.exe",
 	"QT_VERSION_MAJOR" : 5,
 	"QT_VERSION_MINOR" : 14,
-	"SETTINGS_FILE" : "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/FtpServer_autogen.dir/AutogenUsed.txt",
+	"SETTINGS_FILE" : "D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/FTPServer_autogen.dir/AutogenUsed.txt",
 	"SOURCES" : 
 	[
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/dataconnection.cpp",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/dataconnection.cpp",
 			"MU",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpcommand.cpp",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpcommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpcontrolconnection.cpp",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpcontrolconnection.cpp",
 			"MU",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftplistcommand.cpp",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftplistcommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpretrcommand.cpp",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpretrcommand.cpp",
 			"MU",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpserver.cpp",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpserver.cpp",
 			"MU",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpServer/ftpstorcommand.cpp",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpserverwidget.cpp",
 			"MU",
 			null
 		],
 		[
-			"D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/ftpserverwidget.cpp",
+			"D:/BCI_Project/FTP/FTP-Server/FtpServer/src/ftpstorcommand.cpp",
 			"MU",
 			null
-		],
-		[ "D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/main.cpp", "MU", null ]
+		]
 	],
 	"UIC_OPTIONS" : [],
 	"UIC_SEARCH_PATHS" : [],

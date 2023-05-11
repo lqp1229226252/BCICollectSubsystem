@@ -22,11 +22,11 @@ set(CMAKE_CXX_COMPILER_ARCHITECTURE_ID X86)
 
 set(MSVC_CXX_ARCHITECTURE_ID X86)
 
-set(CMAKE_AR "D:/visual studio/vs2017/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x86/lib.exe")
+set(CMAKE_AR "D:/visual studio/vs2017/VC/Tools/MSVC/14.16.27023/bin/Hostx86/x86/lib.exe")
 set(CMAKE_CXX_COMPILER_AR "")
 set(CMAKE_RANLIB ":")
 set(CMAKE_CXX_COMPILER_RANLIB "")
-set(CMAKE_LINKER "D:/visual studio/vs2017/VC/Tools/MSVC/14.16.27023/bin/Hostx64/x86/link.exe")
+set(CMAKE_LINKER "D:/visual studio/vs2017/VC/Tools/MSVC/14.16.27023/bin/Hostx86/x86/link.exe")
 set(CMAKE_MT "D:/Windows Kits/10/bin/10.0.19041.0/x64/mt.exe")
 set(CMAKE_COMPILER_IS_GNUCXX )
 set(CMAKE_CXX_COMPILER_LOADED 1)

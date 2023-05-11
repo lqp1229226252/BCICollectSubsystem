@@ -1,4 +1,10 @@
-D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/FtpServer.dir
-D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/edit_cache.dir
-D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/rebuild_cache.dir
-D:/BCI_Project/FTP/FTP-Server/CmakeFtpServer/BUILD/CMakeFiles/FtpServer_autogen.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/FTPServer.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/test.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/edit_cache.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/rebuild_cache.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/CMakeFiles/FTPServer_autogen.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/CMakeFiles/FTPServerTest.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/CMakeFiles/test.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/CMakeFiles/edit_cache.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/CMakeFiles/rebuild_cache.dir
+D:/BCI_Project/FTP/FTP-Server/FtpServer/BUILD/test/CMakeFiles/FTPServerTest_autogen.dir
