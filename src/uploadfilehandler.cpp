@@ -25,7 +25,6 @@ void UploadFileHandler::init()
 //    this->url = ftpconfig->getFTPConfig();
     setUrl(ftpconfig->getFTPConfig());
 
-    delete ftpconfig;
 }
 
 // 上传文件
