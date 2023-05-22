@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>Login/close2.0.png</file>
+        <file>Login/er1.png</file>
+        <file>Login/er2.png</file>
+        <file>Login/head.png</file>
+        <file>Login/min2.0.png</file>
+        <file>Login/QQ.png</file>
+        <file>Login/Vector.png</file>
+        <file>Login/wc.png</file>
+        <file>QRCode/logo.png</file>
+        <file>QRCode/QRCode.png</file>
+    </qresource>
+</RCC>
