@@ -39,24 +39,16 @@ file(COPY ${BpDLL} DESTINATION ".")
 file(COPY ${RES_EXE} DESTINATION "file")
 ## 添加mat库
 file(COPY ${MATDLL} DESTINATION ".")
-#源代码
-#数据库
-file(GLOB SQL "BCIMysql/*")
-#json数据操作
-file(GLOB JSON "JsonOperation/*")
-#登录
-file(GLOB LOGIN "LoginAndRegister/Login/*")
-#注册
-file(GLOB REGISTER "LoginAndRegister/Register/*")
 
 
 file(GLOB SRC "src/*")
 add_subdirectory(WBG)
 
-add_executable(BCI WIN32 main.cpp src.qrc  ${MonitorRes}
-    ${SRC} ${SQL} ${JSON} ${LOGIN} ${REGISTER})
+
+add_executable(BCI WIN32 main.cpp src.qrc res/Login.qrc res/BCIGameOverData.qrc ${MonitorRes}
+    ${SRC})
 
 
 target_link_libraries(BCI PRIVATE Qt5::Widgets Qt5::Sql WBG)
-target_include_directories(BCI PRIVATE "src" "BCIMysql" "JsonOperation"
-                            "LoginAndRegister/Login" "LoginAndRegister/Register")
+
+target_include_directories(BCI PRIVATE "src")

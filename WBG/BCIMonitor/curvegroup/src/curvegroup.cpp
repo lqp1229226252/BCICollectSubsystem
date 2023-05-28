@@ -4,6 +4,7 @@
 CurveGroup::CurveGroup(QWidget *parent):QWidget(parent)
 {
     init();
+    setConnect();
     initLayout();
     // 设置图表主题
     setCurveStyle();
@@ -27,6 +28,11 @@ void CurveGroup::init()
     this->max_point=defalut_max_point;
     this->current_group=0;
     this->scale=1;
+}
+
+void CurveGroup::setConnect()
+{
+    connect(curvewnd,&CurveWnd::CurrentData,this,&CurveGroup::CurrentData);
 }
 void CurveGroup::initLayout()
 {

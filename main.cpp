@@ -15,7 +15,7 @@ int main(int argc, char *argv[])
          font.setFamily(fontFamilies[0]);//设置全局字体
          a.setFont(font);
      }
-//    WBGWidget w;
+
     WBGWIdget w;
     w.setWindowIcon(QIcon(":/icon/logo.png"));
 //    w.show();

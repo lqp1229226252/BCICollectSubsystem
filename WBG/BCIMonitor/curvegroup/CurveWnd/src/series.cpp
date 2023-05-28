@@ -32,6 +32,7 @@ void Series::append(QList<double> data)
             data->append(*begin);
             begin++;
         }
+        getCurrentData();
     }
 }
 
@@ -121,6 +122,18 @@ void Series::reduceScaleFactor()
     {
         seriesdata[i]->reduceScaleFactor();
     }
+}
+
+void Series::getCurrentData()
+{
+    QList<double> data;
+    int series_num=seriesdata.size();
+    for(int i=0;i<series_num;i++)
+    {
+        data.append(seriesdata[i]->getCurrent_data());
+    }
+    emit CurrentData(data);
+
 }
 
 void Series::setSeriesData()

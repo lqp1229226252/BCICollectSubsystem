@@ -27,12 +27,16 @@ void SeriesData::append(double data)
     if (point_index == max_point_num)
     {
         point_index = 0;
-        QList<double> queue=this->queue.mid(this->queue.size()-30);
-        base_line=std::accumulate(queue.begin(),queue.end(),0)/30;
+        QList<double> queue=this->queue.mid(this->queue.size()-50);
+        base_line=std::accumulate(queue.begin(),queue.end(),0)/50;
+        queue.clear();
 
     }
-    queue.replace(point_index,data);
+
+    queue.append(data);
+
     data=basecheck(data);
+    current_data=data;
     //原始数据
     QPointF point(point_index, data);
     this->raw_points.replace(point_index,point);
@@ -105,4 +109,9 @@ double SeriesData::basecheck(double data)
         data-=base_line;
     }
     return data;
+}
+
+double SeriesData::getCurrent_data() const
+{
+    return current_data;
 }

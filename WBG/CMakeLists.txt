@@ -26,6 +26,8 @@ add_subdirectory(BCIGameOverData)
 add_subdirectory(TCPTool)
 add_subdirectory(FTPServer)
 add_subdirectory(FTPUploadFile)
+add_subdirectory(Login)
+
 add_library(WBG
     ${IndexWidget} ${IntroduceWidget} ${PersonalData}
     ${StartGameWidget} ${StoreWidget} ${UserGameWidget}
@@ -33,7 +35,7 @@ add_library(WBG
     )
 
 target_link_libraries(WBG PUBLIC Qt5::Widgets Qt5::Multimedia Qt5::Charts Qt5::MultimediaWidgets
-                    BCIMonitor BCIGameOverData TCPTool FTPServer FTPUploadFile)
+                    BCIMonitor BCIGameOverData TCPTool FTPServer FTPUploadFile Login)
 
 target_include_directories(WBG PUBLIC  "IndexWidget"
     "IntroduceWidget" "PersonalData"

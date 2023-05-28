@@ -23,6 +23,9 @@ public:
     void updateData();
     void increaseScaleFactor();
     void reduceScaleFactor();
+    void getCurrentData();
+signals:
+    void CurrentData(QList<double>);
 public slots:
 
 private:

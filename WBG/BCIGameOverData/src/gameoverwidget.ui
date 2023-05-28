@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>855</width>
-    <height>390</height>
+    <width>1111</width>
+    <height>463</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -26,7 +26,7 @@ GameOverWidget{
 
 GameOverWidget &gt; QFrame{
 	
-	background-image: url(:/imgs/gameover_bgpic.png);
+	background-image: url(:/BCIGameOverData/gameover_bgpic.png);
 	background-repeat:no-repeat;
 	background-position:center center
 	
@@ -51,6 +51,11 @@ GameOverWidget &gt; QFrame{
    </property>
    <item>
     <widget class="QFrame" name="frame_2">
+     <property name="font">
+      <font>
+       <pointsize>6</pointsize>
+      </font>
+     </property>
      <property name="styleSheet">
       <string notr="true"/>
      </property>
@@ -61,6 +66,21 @@ GameOverWidget &gt; QFrame{
       <enum>QFrame::Raised</enum>
      </property>
      <layout class="QVBoxLayout" name="verticalLayout_8">
+      <item>
+       <widget class="QLabel" name="label">
+        <property name="font">
+         <font>
+          <pointsize>24</pointsize>
+         </font>
+        </property>
+        <property name="text">
+         <string>游戏结束</string>
+        </property>
+        <property name="alignment">
+         <set>Qt::AlignCenter</set>
+        </property>
+       </widget>
+      </item>
       <item>
        <widget class="QWidget" name="widget" native="true">
         <layout class="QHBoxLayout" name="horizontalLayout">
@@ -278,6 +298,42 @@ GameOverWidget &gt; QFrame{
           </widget>
          </item>
          <item>
+          <widget class="QWidget" name="widget_11" native="true">
+           <property name="layoutDirection">
+            <enum>Qt::LeftToRight</enum>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_12" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="lbl3_2">
+              <property name="text">
+               <string>平均正确反应时间</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="AverageRightReactTime">
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
           <widget class="QWidget" name="widget_4" native="true">
            <layout class="QVBoxLayout" name="verticalLayout_3" stretch="1,2">
             <item>
@@ -328,6 +384,78 @@ GameOverWidget &gt; QFrame{
             </item>
             <item>
              <widget class="QLabel" name="HitRate">
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_9" native="true">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_10" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="lbl8_2">
+              <property name="text">
+               <string>遗漏数量</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="TotalMissNum">
+              <property name="font">
+               <font>
+                <pointsize>20</pointsize>
+                <weight>75</weight>
+                <bold>true</bold>
+               </font>
+              </property>
+              <property name="text">
+               <string>0</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+           </layout>
+          </widget>
+         </item>
+         <item>
+          <widget class="QWidget" name="widget_10" native="true">
+           <property name="styleSheet">
+            <string notr="true"/>
+           </property>
+           <layout class="QVBoxLayout" name="verticalLayout_11" stretch="1,2">
+            <item>
+             <widget class="QLabel" name="lbl8_3">
+              <property name="text">
+               <string>打错数量</string>
+              </property>
+              <property name="alignment">
+               <set>Qt::AlignCenter</set>
+              </property>
+             </widget>
+            </item>
+            <item>
+             <widget class="QLabel" name="TotalWrongNum">
               <property name="font">
                <font>
                 <pointsize>20</pointsize>

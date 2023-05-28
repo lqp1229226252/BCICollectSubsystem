@@ -12,6 +12,7 @@
 using namespace QtCharts;
 class CurveWnd: public QWidget
 {
+    Q_OBJECT
 private:
     /* data */
     //曲线数目
@@ -49,9 +50,12 @@ private:
     void setAxisYRange(int start,int end);
     void timerEvent(QTimerEvent *event) override;
     void resizeEvent(QResizeEvent *event) override;
+signals:
+     void CurrentData(QList<double>);
 public:
     explicit CurveWnd(QWidget*parent=nullptr);
     ~CurveWnd();
+     void setConnect();
     //设置曲线数目
     void setCurveNum(int num);
     int  getCurveNum();

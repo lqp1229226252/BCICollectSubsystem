@@ -37,6 +37,7 @@ QList<QList<double>> FileDevice::GetData()
     QList<QList<double>> ret;
     QList<double> data=eegdata.getData();
     ret.append(data);
+//    qDebug()<<data;
     return ret;
 }
 

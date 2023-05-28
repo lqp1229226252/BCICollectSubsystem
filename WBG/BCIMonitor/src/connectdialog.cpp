@@ -9,6 +9,7 @@ ConnectDialog::ConnectDialog(QWidget *parent) :
     ui(new Ui::ConnectDialog)
 {
     ui->setupUi(this);
+    this->setWindowTitle("设备连接");
     loading=new QLabel(this);
     loading->resize(this->size()/2);
     loading->raise();

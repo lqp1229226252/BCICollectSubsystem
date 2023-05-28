@@ -61,11 +61,17 @@ void CurveWnd::mouseDoubleClickEvent(QMouseEvent *event)
 CurveWnd::CurveWnd(QWidget*parent):QWidget(parent)
 {
     initParam();
+    setConnect();
 }
 CurveWnd::~CurveWnd()
 {
     delete view;
     delete layout;
+}
+
+void CurveWnd::setConnect()
+{
+    connect(&series,&Series::CurrentData,this,&CurveWnd::CurrentData);
 }
 void CurveWnd::setAxisXRange(int start,int end)
 {
@@ -159,6 +165,7 @@ int CurveWnd::getCurveNum()
 void CurveWnd::updateCurveNum(int num)
 {
     chart->removeAllSeries();
+    mark.clear();
     for(QStringList::const_iterator begin=labels.begin();begin!=labels.end();begin++)
     {
         this->axisy->remove((*begin));

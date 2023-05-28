@@ -19,6 +19,8 @@ public:
     void increaseScaleFactor();
     void reduceScaleFactor();
 
+    double getCurrent_data() const;
+
 signals:
 private:
     int max_point_num;
@@ -34,6 +36,7 @@ private:
     double base_line=0;
     double basecheck(double data);
     QList<double> queue;
+    double current_data;//当前数据
 };
 
 #endif // SERIESDATA_H

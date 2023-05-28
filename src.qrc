@@ -57,5 +57,6 @@
         <file>image/head.png</file>
         <file>image/Vector.png</file>
         <file>image/QRCode.png</file>
+        <file>image/search.png</file>
     </qresource>
 </RCC>

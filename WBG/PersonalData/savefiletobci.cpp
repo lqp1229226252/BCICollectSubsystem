@@ -60,10 +60,13 @@ void SaveFileToBCI::test(){
             X=2;
         else
             X=1;
-        tcp_message += target_name[i]+"="+QString::number(X)+",";
+        tcp_message += target_name[i]+"="+QString::number(target[i])+",";
+        tcp_message += target_name[i]+"Level"+"="+QString::number(X)+",";
         radar_data.insert(target_name[i],target[i]);
     }
     tcp_message+="MsgEnd";
+//    qDebug()<<"test--------------"<<tcp_message;
+
 
 }
 
@@ -125,8 +128,10 @@ void SaveFileToBCI::HandelBCIFile(const QString filename)
     QFile::copy(FTPFileDir+"/"+filename,SaveFileDir+"/"+filename);
     //2.根据.bci文件中的十个参数计算出调控参数，后通过TCP发送到游戏平台
     QString TCPmessage="";
+
     QMap<QString,double> RadarData;
     CalculateControlParameters(FTPFileDir+"/"+filename,TCPmessage,RadarData);
+//    TCPmessage
     if(RadarData.size()!=0){
         //3.将要发送的数据通过信号抛出去
         emit TcpControlMessageReady(TCPmessage);
@@ -135,6 +140,7 @@ void SaveFileToBCI::HandelBCIFile(const QString filename)
         emit RadarDataReady(RadarData);
         //处理完了就删除
     }
+//    qDebug()<<TCPmessage<<"-----------------";
     QFile::remove(FTPFileDir+"/"+filename);
     qDebug()<<"delete"<<FTPFileDir+"/"+filename<<"success";
 }

@@ -36,6 +36,7 @@ file(GLOB BPDevice "./src/BPDevice/*")
 file(GLOB FileDevice "./src/FileDevice/*")
 file(GLOB Config "./src/Config/*")
 file(GLOB RES_EXE "./res/*.exe")
+message("exe:${RES_EXE}")
 #资源文件
 set(RES_EXE ${RES_EXE} CACHE PATH "read file")
 

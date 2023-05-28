@@ -12,8 +12,10 @@ WBGWIdget::WBGWIdget(QWidget *parent)
     initParams();
     setLayout();
     setConnect();
-    loginWidget->show();
+    LoginWidget->show();
     this->setWindowFlags(Qt::FramelessWindowHint); //不显示边框
+
+
 
 }
 
@@ -23,7 +25,7 @@ WBGWIdget::~WBGWIdget()
     delete ui;
 //    delete indexWidget;
 //    delete introduceWidget;
-//    delete loginWidget;
+//    delete LoginWidget;
 //    delete userGameWidget;
 ////    delete bciMonitor;
 //    delete storeWidget;
@@ -42,7 +44,7 @@ void WBGWIdget::initParams()
     move_flage=false;//窗口移动标志初始化为Flase
     indexWidget=new IndexWidget();
     introduceWidget=new IntroduceWidget();
-    loginWidget=new login();
+    LoginWidget=new Login();
     userGameWidget = new UserGameWidget();
     personalDataWidget = new PersonalDataWidget();
     storeWidget = new Store();
@@ -62,9 +64,10 @@ void WBGWIdget::initParams()
 
 void WBGWIdget::setConnect()
 {
-    connect(loginWidget,&login::LoginSucceedSignal,[=](QString account){
+    connect(LoginWidget,&Login::LoginSucceedSignal,[=](QString account){
         this->account=account;  //登录成功后可以传来用户账号
         this->showMaximized();
+        LoginWidget->close();
         initFTP();
     });
 

@@ -1,7 +1,6 @@
 #ifndef GAMEOVERWIDGET_H
 #define GAMEOVERWIDGET_H
 
-
 #include <QWidget>
 #include <QMap>
 

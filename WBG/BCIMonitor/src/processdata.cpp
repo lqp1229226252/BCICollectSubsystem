@@ -33,7 +33,7 @@ void ProcessData::receiveData(QList<double> value)
          }
          data.remove(0,down_sample);
          msgdata+="MsgEnd";
-//         qDebug()<<msgdata;
+         qDebug()<<msgdata;
          emit downData(msgdata);
     }
 }

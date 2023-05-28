@@ -133,8 +133,8 @@
           <string/>
          </property>
          <property name="icon">
-          <iconset resource="../../../pic/pic.qrc">
-           <normaloff>:/search.png</normaloff>:/search.png</iconset>
+          <iconset resource="../../../src.qrc">
+           <normaloff>:/image/search.png</normaloff>:/image/search.png</iconset>
          </property>
          <property name="iconSize">
           <size>
@@ -277,8 +277,8 @@ QScrollArea QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical
       <property name="geometry">
        <rect>
         <x>0</x>
-        <y>-694</y>
-        <width>958</width>
+        <y>0</y>
+        <width>969</width>
         <height>1400</height>
        </rect>
       </property>
@@ -572,7 +572,7 @@ QScrollArea QScrollBar::add-line:vertical,QScrollBar::sub-line:vertical
   </layout>
  </widget>
  <resources>
-  <include location="../../../pic/pic.qrc"/>
+  <include location="../../../src.qrc"/>
  </resources>
  <connections/>
 </ui>

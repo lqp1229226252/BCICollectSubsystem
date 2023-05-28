@@ -83,3 +83,11 @@ void Mark::setMax_point_num(int value)
 {
     max_point_num = value;
 }
+
+void Mark::clear()
+{
+    current.clear();
+    qDeleteAll(marklabels);
+    marklabels.clear();
+    markseries.clear();
+}

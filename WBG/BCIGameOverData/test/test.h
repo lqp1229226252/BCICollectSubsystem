@@ -2,6 +2,7 @@
 #define TEST_H
 
 #include <QObject>
+
 #include "gameoverwidget.h"
 
 class test : public QObject
@@ -10,11 +11,12 @@ class test : public QObject
 public:
     explicit test(QObject *parent = nullptr);
 
-    void analze(QString msg);
+    void analze(QMap<QString, QString>);
 
 signals:
 
 private:
+
     GameOverWidget *gameOverWidget;
 
 };

@@ -6,6 +6,7 @@ SelectDialog::SelectDialog(QWidget *parent) :
     ui(new Ui::SelectDialog)
 {
     ui->setupUi(this);
+    this->setWindowTitle("设备选择");
 }
 
 SelectDialog::~SelectDialog()

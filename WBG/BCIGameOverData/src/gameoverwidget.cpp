@@ -1,6 +1,5 @@
 ﻿#include "gameoverwidget.h"
 #include "ui_gameoverwidget.h"
-
 #include <QMap>
 #include <qdebug.h>
 
@@ -23,18 +22,17 @@ GameOverWidget::~GameOverWidget()
 void GameOverWidget::init()
 {
 
-    this->setFixedSize(800, 400);
+    this->setFixedSize(1110, 500);
     this->setWindowFlags(Qt::FramelessWindowHint);
 
     connect(ui->confirmBtn, &QPushButton::clicked, this, &GameOverWidget::close);
-    //    connect(tool, &AnalyzeGameMsgTool::analyzeMsgDoneSignal, this, &GameOverWidget::setMap);
     connect(this, &GameOverWidget::analyzeMsgDoneSignal, this, &GameOverWidget::onAnalyzeMsgDone);
 }
 
 
 void GameOverWidget::setStyle()
 {
-    this->setStyleSheet("background-image:url(:/gameover_bgpic.png)");
+    //    this->setStyleSheet("background-image:url(./gameover_bgpic.png)");   //周换到ui内完成操作了。
 }
 
 
@@ -48,6 +46,9 @@ void GameOverWidget::onAnalyzeMsgDone()
     ui->TotalFire->setText(map.value("TotalFire"));
     ui->TotalGameTime->setText(map.value("TotalGameTime"));
     ui->HitRate->setText(map.value("HitRate"));
+    ui->TotalMissNum->setText(map.value("TotalMissNum"));
+    ui->TotalWrongNum->setText(map.value("TotalWrongNum"));
+    ui->AverageRightReactTime->setText(map.value("AverageRightReactTime"));
 
     this->show();
 
@@ -56,12 +57,10 @@ void GameOverWidget::onAnalyzeMsgDone()
 
 void GameOverWidget::setMap(QMap<QString, QString> qmap)
 {
-    if(qmap.size() == 8){
-        this->map = qmap;
-        qDebug() << "getMap::" << this->map;
+    this->map = qmap;
+    qDebug() << "setMap::" << this->map;
 
-        emit analyzeMsgDoneSignal();
-    }
+    emit analyzeMsgDoneSignal();
 
 }
 

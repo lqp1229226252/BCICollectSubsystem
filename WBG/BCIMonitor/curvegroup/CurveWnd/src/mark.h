@@ -22,7 +22,10 @@ public:
 
     void setMax_point_num(int value);
 
+    void clear();
+
 signals:
+
 private:
     QChart *chart;
     QList<QLineSeries *> markseries;

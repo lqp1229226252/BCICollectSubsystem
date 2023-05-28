@@ -48,6 +48,7 @@ public slots:
 signals:
     void first_group();
     void end_group();
+    void CurrentData(QList<double>);
 private:
     CurveWnd *curvewnd;
     QHBoxLayout *widget_layout;
@@ -60,6 +61,7 @@ private:
     QStringList labels;
     int current_group;
     void init();
+    void setConnect();
     void initLayout();
 };
 

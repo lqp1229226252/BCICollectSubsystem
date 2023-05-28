@@ -1,5 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>gameover_bgpic.png</file>
+        <file>BCIGameOverData/gameover_bgpic.png</file>
     </qresource>
 </RCC>
