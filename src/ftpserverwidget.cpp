@@ -1,6 +1,4 @@
 ﻿#include "ftpserverwidget.h"
-
-
 FtpServerWidget::FtpServerWidget(QWidget *parent)
     : QWidget{parent}
 {
@@ -41,7 +39,7 @@ int FtpServerWidget::LoadIni()  //loadName字符串是 配置文件里的“节�
     QString password=settings.value("password").toString();
     QString filepath=settings.value("filepath").toString();
     settings.endGroup();
-    qDebug()<<ip<<port<<username<<password<<filepath;
+    //qDebug()<<"------------"<<ip<<port<<username<<password<<filepath;
     if(ip!=""&&port!=""&&username!=""&&password!=""&&filepath!=""){
         ftpinfo.ip=ip;
         ftpinfo.port=port;

@@ -15,7 +15,7 @@
 #include <QFileInfo>
 #include <QHostInfo>
 #include <QSettings>
-
+#include "savefiletobci.h"
 #include "ftpserver.h"
 
 class FtpServerWidget : public QWidget
@@ -98,7 +98,7 @@ private:
     QString ftpPath = nullptr;
 
     FtpServer *ftpServer = nullptr;
-
+    SaveFileToBCI _SaveFileToBCI;
 };
 
 #endif // FTPSERVERWIDGET_H
