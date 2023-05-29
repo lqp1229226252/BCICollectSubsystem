@@ -53,8 +53,8 @@ signals:
 
 private:
     QJsonArray *json;
-    void JsonInsertLstLand(QString account, QString password, int isAutoLand, int isSavePassword);
-
+    void JsonInsertLstLand(QString account, QString password, int isAutoLand, int isSavePassword);  //更新上一次登录LstLand信息
+    void UpdataUser(QString account,int isAutoLand, int isSavePassword);  //更新用户user登录选择信息
 };
 
 #endif // JSONOPERATION_H

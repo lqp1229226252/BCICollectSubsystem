@@ -31,7 +31,7 @@ void JsonOperation::landID(QString account, QString password, int isAutoLand, in
                 emit landSucceed(account);
 //                qDebug()<<"登录成功";
                 JsonInsertLstLand(account,password,isAutoLand,isSavePassword);
-
+                UpdataUser(account,isAutoLand,isSavePassword);
             }
             else {
 //                qDebug()<<"登录失败";
@@ -296,4 +296,35 @@ void JsonOperation::JsonInsertLstLand(QString account, QString password, int isA
     file.write(json);
     file.close();
 
+}
+
+void JsonOperation::UpdataUser(QString account, int isAutoLand, int isSavePassword)
+{
+    QString filename = "userInfo.json";
+    QFile file(filename);
+    file.open(QIODevice::ReadOnly);
+
+    QJsonDocument jdc(QJsonDocument::fromJson(file.readAll()));  //有就打开，没有就新建。
+    file.close();
+
+    QJsonObject obj= jdc.object();
+
+    if(obj.contains("user")){
+        QJsonObject userAll=(obj.find("user"))->toObject();
+        if(userAll.contains(account)){
+            QJsonObject user=(userAll.find(account))->toObject();
+            user.insert("isAutoLand",isAutoLand);
+            user.insert("isSavePassword",isSavePassword);
+
+            userAll.insert(account,user);
+            obj.insert("user",userAll);
+
+        }
+    }
+
+    QJsonDocument doc(obj);
+    QByteArray json=doc.toJson();
+    file.open(QFile::WriteOnly);
+    file.write(json);
+    file.close();
 }
