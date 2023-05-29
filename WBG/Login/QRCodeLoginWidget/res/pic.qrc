@@ -1,0 +1,6 @@
+<RCC>
+    <qresource prefix="/">
+        <file>QRCode/logo.png</file>
+        <file>QRCode/QRCode.png</file>
+    </qresource>
+</RCC>

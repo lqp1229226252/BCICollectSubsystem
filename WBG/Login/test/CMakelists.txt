@@ -1,0 +1,14 @@
+﻿cmake_minimum_required(VERSION 3.10.0)
+project(Login_test)
+
+set(CMAKE_AUTOUIC ON)
+set(CMAKE_AUTOMOC ON)
+set(CMAKE_AUTORCC ON)
+
+set(CMAKE_CXX_STANDARD 11)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
+find_package(Qt5 COMPONENTS Widgets)
+
+message("${Login}")
+add_executable(Login_test main.cpp ${Login})
+target_link_libraries(Login_test Login)

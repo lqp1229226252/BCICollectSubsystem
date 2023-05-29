@@ -1,0 +1,12 @@
+<RCC>
+    <qresource prefix="/">
+        <file>er1.png</file>
+        <file>er2.png</file>
+        <file>head.png</file>
+        <file>wc.png</file>
+        <file>QQ.png</file>
+        <file>Vector.png</file>
+        <file>close2.0.png</file>
+        <file>min2.0.png</file>
+    </qresource>
+</RCC>
