@@ -102,7 +102,7 @@ private:
 
 
     //FTP服务器用于接收bci文件
-    FtpServerWidget ftpWidget;
+    FtpServerWidget *ftpWidget;
     void initFTP();
 
 

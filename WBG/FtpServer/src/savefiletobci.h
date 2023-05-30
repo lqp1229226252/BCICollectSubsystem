@@ -1,8 +1,10 @@
 ﻿#ifndef SAVEFILETOBCI_H
 #define SAVEFILETOBCI_H
-
 #include <QObject>
 #include <QFile>
+#include <QSettings>
+#include <QDebug>
+#include <QDir>
 #include <QMap>
 /*这个类的主要工作是扫描FTP文件夹中是否有文件到来
 根据后缀名判断是什么文件
@@ -22,11 +24,9 @@ signals:
     void RadarDataReady(QMap<QString,double> radar_data);
     void TcpControlMessageReady(QString ControlMessage);
 private:
-
-    //测试，调用的时候参考这
-    void SaveFileToBCI::test(void);
+    void SaveFileToBCI::initFilePath(void);
     //从.bci文件中计算调控参数，然后通过TCP发送给游戏平台
-    void CalculateControlParameters(const QString filename,QString &tcp_message,QMap<QString,double> &radar_data);
+    int CalculateControlParameters(const QString filename,QString &tcp_message,QMap<QString,double> &radar_data);
     void timerEvent(QTimerEvent *event) override;
 
     void HandelFile(void);

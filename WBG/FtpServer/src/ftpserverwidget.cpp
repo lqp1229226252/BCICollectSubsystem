@@ -1,11 +1,13 @@
 ﻿#include "ftpserverwidget.h"
-
-
 FtpServerWidget::FtpServerWidget(QWidget *parent)
     : QWidget{parent}
 {
     this->value_init();
     this->control_init();
+    _SaveFileToBCI = new SaveFileToBCI();
+
+    connect(_SaveFileToBCI,&SaveFileToBCI::RadarDataReady,this,&FtpServerWidget::emitRadarDataReady);
+    connect(_SaveFileToBCI,&SaveFileToBCI::TcpControlMessageReady,this,&FtpServerWidget::emitTcpControlMessageReady);
 
 }
 
@@ -41,7 +43,7 @@ int FtpServerWidget::LoadIni()  //loadName字符串是 配置文件里的“节�
     QString password=settings.value("password").toString();
     QString filepath=settings.value("filepath").toString();
     settings.endGroup();
-    qDebug()<<ip<<port<<username<<password<<filepath;
+    //qDebug()<<"------------"<<ip<<port<<username<<password<<filepath;
     if(ip!=""&&port!=""&&username!=""&&password!=""&&filepath!=""){
         ftpinfo.ip=ip;
         ftpinfo.port=port;
@@ -51,6 +53,16 @@ int FtpServerWidget::LoadIni()  //loadName字符串是 配置文件里的“节�
         return 1;
     }
     return -1;//某项为空
+}
+
+void FtpServerWidget::emitRadarDataReady(QMap<QString, double> radar_data)
+{
+    emit _RadarDataReady(radar_data);
+}
+
+void FtpServerWidget::emitTcpControlMessageReady(QString ControlMessage)
+{
+    emit _TcpControlMessageReady(ControlMessage);
 }
 
 
@@ -273,6 +285,7 @@ void FtpServerWidget::control_init()
     connect(this->btnSelectPath,&QPushButton::clicked,this,&FtpServerWidget::btn_click_slot);
 
 }
+
 bool FtpServerWidget::set_ftp_para(QString ip, QString port, QString userName, QString password, QString path)
 {
 
