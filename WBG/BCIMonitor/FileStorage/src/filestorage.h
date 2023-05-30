@@ -15,6 +15,8 @@ public:
     //新建文件
     void creatFile();
     void creatFile(QString);
+    //插入事件
+    void appendEvent(int);
 public slots:
     //开始
     void start();
@@ -63,5 +65,6 @@ signals:
     void setNameSignal(QString);
     void stopSignal();
     void saveFinish(QString);
+    void mergeMsg(QString);
 };
 #endif // FILESTORAGE_H

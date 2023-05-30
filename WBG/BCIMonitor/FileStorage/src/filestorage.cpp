@@ -67,6 +67,7 @@ void FileStorage::stop()
     start_flag=false;
     stop_flag=true;
     save();
+    storage->stop();
 }
 
 void FileStorage::setSampleNum(int value)
@@ -119,6 +120,11 @@ void FileStorage::creatFile(QString name)
     this->stop_flag=false;
     storage->setFilename(name);
 }
+
+void FileStorage::appendEvent(int type)
+{
+    storage->appendEvent(type,storage_num);
+}
 void FileStorage::init()
 {
     this->num=20000;
@@ -137,6 +143,7 @@ void FileStorage::setStorageConnect()
     connect(this,&FileStorage::storageSignal,storage,&Storage::save,Qt::DirectConnection);
     connect(this,&FileStorage::stopSignal,storage,&Storage::stop,Qt::DirectConnection);
     connect(storage,&Storage::saveFinish,this,&FileStorage::saveFinish);
+    connect(storage,&Storage::mergeMsg,this,&FileStorage::mergeMsg);
 }
 
 void FileStorage::save()
