@@ -4,6 +4,7 @@
 #include "mat.h"
 #include "storage.h"
 #include "mat.h"
+#include "QProcess"
 class MatStorage:public Storage
 {
     Q_OBJECT
@@ -15,13 +16,19 @@ public:
 public slots:
     void save(double*,int num)override;
     void stop() override;
+private slots:
+    void matProcessFinished(int,QProcess::ExitStatus);
 private:
     MAT mat;
     QString getCurrentFileName();
-    QVariantList getEvent(int);
-    QVariantList getUrevent(int);
-    int sample=0;
     int sample_id=0;
+    //通道数
+    quint8 channel_num;
+    //获取保存的目录
+    QString getFilePath();
+    QProcess *mat_process;
+    void initMatProcess();
+    void setMatProcessConnect();
 };
 
 #endif // MATSTORAGE_H

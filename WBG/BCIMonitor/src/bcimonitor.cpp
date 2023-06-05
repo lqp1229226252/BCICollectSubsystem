@@ -90,26 +90,47 @@ void BCIMonitor::start()
 void BCIMonitor::appendMarkEnemyBorn(QMap<QString, QString>)
 {
     curvegroup->appendMark("敌人刷新");
+    filestorage->appendEvent(EventType::EnemyBorn);
 }
 
 void BCIMonitor::appendMarkEnemyDie(QMap<QString, QString>)
 {
     curvegroup->appendMark("敌人死亡");
+     filestorage->appendEvent(EventType::EnemyDie);
 }
 
-void BCIMonitor::appendMarkFireHit(QMap<QString, QString>)
+void BCIMonitor::appendMarkFireHit(QMap<QString, QString> map)
 {
-    curvegroup->appendMark("开枪命中");
+    if(map["HitRight"].toInt()==1)
+    {
+        curvegroup->appendMark("开枪命中");
+        filestorage->appendEvent(EventType::FireHit);
+    }
+    else
+    {
+       curvegroup->appendMark("命中错误");
+       filestorage->appendEvent(EventType::FireHitErr);
+    }
 }
 
 void BCIMonitor::appendMarkFireMiss(QMap<QString, QString>)
 {
     curvegroup->appendMark("开枪未命中");
+    filestorage->appendEvent(EventType::FireMiss);
 }
 
-void BCIMonitor::appendMarkCutHit(QMap<QString, QString>)
+void BCIMonitor::appendMarkCutHit(QMap<QString, QString> map)
 {
-    curvegroup->appendMark("挥砍命中");
+    if(map["HitRight"].toInt()==1)
+    {
+        curvegroup->appendMark("挥砍命中");
+        filestorage->appendEvent(EventType::CutHit);
+    }
+    else
+    {
+       curvegroup->appendMark("命中错误");
+       filestorage->appendEvent(EventType::CutHitErr);
+    }
 }
 void BCIMonitor::init()
 {
@@ -220,6 +241,9 @@ void BCIMonitor::setFileConnect()
     connect(this,&BCIMonitor::setChannelNum,filestorage,&FileStorage::setChannel_num);
     connect(this,&BCIMonitor::setChanlocs,filestorage,&FileStorage::setChanlocs);
     connect(filestorage,&FileStorage::saveFinish,this,&BCIMonitor::saveFinished);
+    connect(filestorage,&FileStorage::mergeMsg,this,[=](QString msg){
+        statusbar->showMessage(msg);
+    });
 }
 void BCIMonitor::initSample()
 {

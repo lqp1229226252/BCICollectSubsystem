@@ -15,7 +15,7 @@
 #include <QFileInfo>
 #include <QHostInfo>
 #include <QSettings>
-
+#include "savefiletobci.h"
 #include "ftpserver.h"
 
 class FtpServerWidget : public QWidget
@@ -31,6 +31,7 @@ signals:
 public:
     explicit FtpServerWidget(QWidget *parent = nullptr);
     ~FtpServerWidget();
+    SaveFileToBCI *_SaveFileToBCI;
 
     bool set_ftp_para(QString ip,QString port,QString userName,QString password,QString path);
 
@@ -55,12 +56,20 @@ public:
         QString password;
         QString filepath;
     } ftpinfo;
+signals:
+    void _RadarDataReady(QMap<QString,double> radar_data);
+    void _TcpControlMessageReady(QString ControlMessage);
+public slots:
+    void emitRadarDataReady(QMap<QString,double> radar_data);
+    void emitTcpControlMessageReady(QString ControlMessage);
+
 protected:
     void showEvent(QShowEvent *event) override;
     void closeEvent(QCloseEvent *event) override;
 private:
     void value_init();
     void control_init();
+    void initConnect();
 private slots:
   void btn_click_slot();
   void dir_select_slot(const QString &directory);

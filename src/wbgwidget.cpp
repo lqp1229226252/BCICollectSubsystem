@@ -9,6 +9,7 @@ WBGWIdget::WBGWIdget(QWidget *parent)
     , ui(new Ui::WBGWIdget)
 {
     ui->setupUi(this);
+    ftpWidget=new FtpServerWidget();
     initParams();
     setLayout();
     setConnect();
@@ -300,8 +301,10 @@ void WBGWIdget::initFTPRevice()
 
 void WBGWIdget::setFTPReviceConnect()
 {
-    connect(ftprevice,&SaveFileToBCI::TcpControlMessageReady,tcpserver,&TcpServer::tcpSendContent);
-    connect(ftprevice,&SaveFileToBCI::RadarDataReady,personalDataWidget,&PersonalDataWidget::getRecChartDatas);
+    connect(ftpWidget,&FtpServerWidget::_TcpControlMessageReady,tcpserver,&TcpServer::tcpSendContent);
+    connect(ftpWidget,&FtpServerWidget::_RadarDataReady,personalDataWidget,&PersonalDataWidget::getRecChartDatas);
+//    connect(ftprevice,&SaveFileToBCI::TcpControlMessageReady,tcpserver,&TcpServer::tcpSendContent);
+//    connect(ftprevice,&SaveFileToBCI::RadarDataReady,personalDataWidget,&PersonalDataWidget::getRecChartDatas);
 }
 
 void WBGWIdget::initTCP()
@@ -323,15 +326,15 @@ void WBGWIdget::setTCPConnect()
 
 void WBGWIdget::initFTP()
 {
-    if(ftpWidget.LoadIni()==-1){
+    if(ftpWidget->LoadIni()==-1){
         QString path = "D:/BCIData/FTP-Receive";
-        ftpWidget.set_ftp_para("127.0.0.1","21","demo","demo",path);
+        ftpWidget->set_ftp_para("127.0.0.1","21","demo","demo",path);
     }
     else{
-        ftpWidget.set_ftp_para(ftpWidget.ftpinfo.ip,ftpWidget.ftpinfo.port,ftpWidget.ftpinfo.username,
-                               ftpWidget.ftpinfo.password,ftpWidget.ftpinfo.filepath);
+        ftpWidget->set_ftp_para(ftpWidget->ftpinfo.ip,ftpWidget->ftpinfo.port,ftpWidget->ftpinfo.username,
+                               ftpWidget->ftpinfo.password,ftpWidget->ftpinfo.filepath);
     }
-    ftpWidget.show();
+    ftpWidget->show();
 }
 
 

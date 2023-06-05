@@ -27,12 +27,16 @@ void SeriesData::append(double data)
     if (point_index == max_point_num)
     {
         point_index = 0;
+
+
+    }
+    //更新基线
+    if(queue.size()==max_point_num)
+    {
         QList<double> queue=this->queue.mid(this->queue.size()-50);
         base_line=std::accumulate(queue.begin(),queue.end(),0)/50;
         queue.clear();
-
     }
-
     queue.append(data);
 
     data=basecheck(data);

@@ -41,6 +41,18 @@ private slots:
     void setDeviceType(int index);
     void updateAmplifierMsg();
 private:
+
+    //事件类型
+    typedef  enum
+    {
+       EnemyBorn=0, //敌人刷新
+       EnemyDie, //敌人死亡
+       FireHit,  //开枪命中
+       FireHitErr, //开枪命中错误
+       FireMiss,  //开枪未命中
+       CutHit,   //挥砍命中
+       CutHitErr, //挥砍命中错误
+    }EventType;
     Ui::BCIMonitor *ui;
     void init();
     void setConnect();
