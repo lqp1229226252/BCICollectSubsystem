@@ -29,7 +29,7 @@ add_subdirectory(Register)
 file(GLOB SRC "src/*")
 #资源
 file(GLOB RES "res/*.qrc")
-set(Login ${RES}  CACHE PATH "res of monitor")
+set(LoginRes ${RES}  CACHE PATH "res of monitor")
 # add_library(${PROJECT_NAME}  ${SRC} ${res} FileStorage SampleDevice curvegroup)
 add_library(${PROJECT_NAME}  ${SRC} ${RES}  QRCodeLoginWidget Register)
 

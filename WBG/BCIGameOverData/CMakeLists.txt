@@ -1,4 +1,4 @@
-## 库的cmake模板
+﻿## 库的cmake模板
 ## 基本上修改project和target_link_libraries
 cmake_minimum_required(VERSION 3.5)
 
@@ -20,9 +20,14 @@ add_compile_options("/execution-charset:utf-8")
 #添加测试代码的文件夹
 add_subdirectory(test)
 
+# 代码
 file(GLOB SRC ./src/*)
+#资源文件
+file(GLOB RES "res/*.qrc")
+set(BCIGameOverDataRes ${RES} CACHE PATH "res of BCIGameOverData")
+message("${BCIGameOverDataRes}")
 # 添加代码到库
-add_library(${PROJECT_NAME}  ${SRC} )
+add_library(${PROJECT_NAME}  ${SRC}  ${RES})
 
 ## 连接所包含的库
 target_link_libraries(${PROJECT_NAME}  Qt5::Core Qt5::Widgets Qt5::Charts Qt5::Network)
