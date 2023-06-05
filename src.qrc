@@ -1,14 +1,5 @@
 <RCC>
     <qresource prefix="/">
-        <file>image/close.png</file>
-        <file>image/close2.0.png</file>
-        <file>image/er1.png</file>
-        <file>image/er2.png</file>
-        <file>image/max.png</file>
-        <file>image/min.png</file>
-        <file>image/min2.0.png</file>
-        <file>image/QQ.png</file>
-        <file>image/wc.png</file>
         <file>image/introduce_pic/about_hero_loop_web.png</file>
         <file>image/introduce_pic/back.png</file>
         <file>image/introduce_pic/back_2.png</file>
@@ -56,7 +47,6 @@
         <file>image/logo.png</file>
         <file>image/head.png</file>
         <file>image/Vector.png</file>
-        <file>image/QRCode.png</file>
         <file>image/search.png</file>
     </qresource>
 </RCC>

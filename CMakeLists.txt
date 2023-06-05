@@ -45,7 +45,8 @@ file(GLOB SRC "src/*")
 add_subdirectory(WBG)
 
 
-add_executable(BCI WIN32 main.cpp src.qrc res/Login.qrc res/BCIGameOverData.qrc ${MonitorRes}
+add_executable(BCI WIN32 main.cpp src.qrc
+    ${MonitorRes} ${LoginRes} ${BCIGameOverDataRes}
     ${SRC})
 
 

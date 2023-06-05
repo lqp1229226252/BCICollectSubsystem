@@ -17,6 +17,7 @@ WBGWIdget::WBGWIdget(QWidget *parent)
 
 
 
+
 }
 
 WBGWIdget::~WBGWIdget()

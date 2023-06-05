@@ -9,6 +9,6 @@ set(CMAKE_CXX_STANDARD 11)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 find_package(Qt5 COMPONENTS Widgets)
 
-message("${Login}")
-add_executable(Login_test main.cpp ${Login})
+message("${LoginRes}")
+add_executable(Login_test main.cpp ${LoginRes})
 target_link_libraries(Login_test Login)
