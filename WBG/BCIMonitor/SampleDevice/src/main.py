@@ -21,8 +21,8 @@ if __name__ == '__main__':
     warnings.filterwarnings('ignore')
 
     parser = argparse.ArgumentParser()
-    parser.add_argument("--path", type=str, default='', help="file path")
-    parser.add_argument("--temp", type=str, default='', help="file of temp path")
+    parser.add_argument("--path", type=str, default='C:/Users/20291/Desktop/test/test.vhdr', help="file path")
+    parser.add_argument("--temp", type=str, default='.', help="file of temp path")
     args = parser.parse_args()
 
     readFile(args)
