@@ -25,7 +25,6 @@ file(GLOB SRC ./src/*)
 #资源文件
 file(GLOB RES "res/*.qrc")
 set(BCIGameOverDataRes ${RES} CACHE PATH "res of BCIGameOverData")
-message("${BCIGameOverDataRes}")
 # 添加代码到库
 add_library(${PROJECT_NAME}  ${SRC}  ${RES})
 
