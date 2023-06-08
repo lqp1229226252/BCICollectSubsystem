@@ -30,11 +30,7 @@ void DataThread::run()
             for(int i=0;i<buf_num;i++){
                 QList<double> data=all_data.at(i);
                 data=filter.filterData(data);
-                if(fabs(data[0])>200)
-                {
-                    data.clear();
-                }
-                if(data.size()!=0)
+                if(!data.isEmpty())
                 {
                     usleep(1);
                     emit readFinish(data);

@@ -3,6 +3,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 <!-- Written by QtCreator 4.11.1, 2023-06-05T20:02:15. -->
 <qtcreator>
  <data>
@@ -16,6 +17,9 @@
 =======
 <!-- Written by QtCreator 4.11.1, 2023-06-08T09:59:20. -->
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+<!-- Written by QtCreator 4.11.1, 2023-06-08T13:49:27. -->
+>>>>>>> c576a27 (测试滤波器功能)
 <qtcreator>
  <data>
   <variable>EnvironmentId</variable>
@@ -83,7 +87,7 @@
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DefaultDisplayName">Desktop Qt 5.14.2 MSVC2017 32bit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.DisplayName">Desktop Qt 5.14.2 MSVC2017 32bit</value>
    <value type="QString" key="ProjectExplorer.ProjectConfiguration.Id">qt.qt5.5142.win32_msvc2017_kit</value>
-   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">0</value>
+   <value type="int" key="ProjectExplorer.Target.ActiveBuildConfiguration">1</value>
    <value type="int" key="ProjectExplorer.Target.ActiveDeployConfiguration">0</value>
    <value type="int" key="ProjectExplorer.Target.ActiveRunConfiguration">0</value>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.BuildConfiguration.0">
@@ -364,6 +368,7 @@
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release</value>
 
@@ -373,6 +378,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.1">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -449,6 +457,7 @@
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/BCIMonitor/FileStorage/test</value>
 
@@ -458,6 +467,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIMonitor/FileStorage/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/FileStorage/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.10">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -536,6 +548,7 @@
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
 
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/BCIMonitor/FileStorage/MAT/test</value>
 
@@ -545,6 +558,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/TCPTool/analysisgamemsg/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/TCPTool/analysisgamemsg/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.11">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -624,6 +640,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/BCIMonitor/SampleDevice/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIGameOverData/test</value>
@@ -631,6 +648,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/debug/WBG/BCIGameOverData/test</value>
 >>>>>>> e77a1a3 (增加滤波功能，滤波范围（0-70Hz）)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIGameOverData/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.12">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -785,12 +805,16 @@
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/FtpServer/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/FtpServer/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/debug/WBG/FtpServer/test</value>
 >>>>>>> e77a1a3 (增加滤波功能，滤波范围（0-70Hz）)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/FtpServer/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.13">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -866,11 +890,15 @@
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/FTPUploadFile/test</value>
 >>>>>>> 0f5705e (合并分支)
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/debug/WBG/FTPUploadFile/test</value>
 >>>>>>> e77a1a3 (增加滤波功能，滤波范围（0-70Hz）)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/FTPUploadFile/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.14">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -953,6 +981,7 @@
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/FTPUploadFile/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/Login/test</value>
@@ -960,6 +989,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/debug/WBG/Login/test</value>
 >>>>>>> e77a1a3 (增加滤波功能，滤波范围（0-70Hz）)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/Login/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.15">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1041,10 +1073,14 @@
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/Login/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/debug/WBG/Login/QRCodeLoginWidget/test</value>
 >>>>>>> e77a1a3 (增加滤波功能，滤波范围（0-70Hz）)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/Login/QRCodeLoginWidget/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.16">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1202,12 +1238,16 @@
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/Login/Register/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/Login/Register/test</value>
 >>>>>>> 0f5705e (合并分支)
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/debug/WBG/Login/Register/test</value>
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/Login/Register/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.17">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1282,11 +1322,15 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/debug/WBG/BCIMonitor/SampleDevice/filter/test</value>
 >>>>>>> e77a1a3 (增加滤波功能，滤波范围（0-70Hz）)
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIGameOverData/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/SampleDevice/filter/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.2">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1370,6 +1414,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/TCPTool/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/test</value>
@@ -1380,6 +1425,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIMonitor/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.3">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1463,6 +1511,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/TCPTool/analysisgamemsg/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/curvegroup/CurveWnd/test</value>
@@ -1473,6 +1522,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIMonitor/curvegroup/CurveWnd/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/curvegroup/CurveWnd/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.4">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1556,6 +1608,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/BCIMonitor/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/curvegroup/test</value>
@@ -1566,6 +1619,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIMonitor/curvegroup/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/curvegroup/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.5">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1649,6 +1705,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/BCIMonitor/curvegroup/CurveWnd/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/curvegroup/CurveWnd/maxwidget/CurveProperty/test</value>
@@ -1659,6 +1716,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIMonitor/curvegroup/CurveWnd/maxwidget/CurveProperty/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/curvegroup/CurveWnd/maxwidget/CurveProperty/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.6">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1742,6 +1802,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/BCIMonitor/curvegroup/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/curvegroup/CurveWnd/maxwidget/test</value>
@@ -1752,6 +1813,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIMonitor/curvegroup/CurveWnd/maxwidget/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/curvegroup/CurveWnd/maxwidget/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.7">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1835,6 +1899,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/BCIGameOverData/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/FileStorage/MAT/test</value>
@@ -1845,6 +1910,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIMonitor/FileStorage/MAT/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/FileStorage/MAT/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.8">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -1928,6 +1996,7 @@
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
+<<<<<<< HEAD
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/Qt/BCI/New/WebrianRecorder-1.1/build/Release/WBG/BCIMonitor/curvegroup/CurveWnd/maxwidget/CurveProperty/test</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/SampleDevice/test</value>
@@ -1938,6 +2007,9 @@
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/BCI/BCI/BCIV1.9/build/debug/WBG/BCIMonitor/SampleDevice/test</value>
 >>>>>>> d831fc0 (Signed-off-by: anqsl <2029177435@qq.com>)
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/BCIMonitor/SampleDevice/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <valuemap type="QVariantMap" key="ProjectExplorer.Target.RunConfiguration.9">
     <value type="QString" key="Analyzer.Perf.CallgraphMode">dwarf</value>
@@ -2018,6 +2090,7 @@
     <value type="bool" key="RunConfiguration.UseQmlDebugger">false</value>
     <value type="bool" key="RunConfiguration.UseQmlDebuggerAuto">true</value>
     <value type="QString" key="RunConfiguration.WorkingDirectory"></value>
+<<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
 <<<<<<< HEAD
@@ -2845,6 +2918,9 @@
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">1</value>
 =======
     <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/debug/WBG/TCPTool/test</value>
+=======
+    <value type="QString" key="RunConfiguration.WorkingDirectory.default">D:/project/Qt/WebrainRecorder/WebrianRecorder/build/release/WBG/TCPTool/test</value>
+>>>>>>> c576a27 (测试滤波器功能)
    </valuemap>
    <value type="int" key="ProjectExplorer.Target.RunConfigurationCount">18</value>
 >>>>>>> e77a1a3 (增加滤波功能，滤波范围（0-70Hz）)
