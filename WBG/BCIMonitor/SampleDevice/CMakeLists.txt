@@ -30,6 +30,7 @@ include_directories(${BPInclude})
 
 #Qt库
 find_package(Qt5 COMPONENTS  Core widgets REQUIRED)
+add_subdirectory(filter)
 
 file(GLOB SRC "./src/*")
 file(GLOB BPDevice "./src/BPDevice/*")
@@ -43,7 +44,7 @@ set(RES_EXE ${RES_EXE} CACHE PATH "read file")
 add_library(SampleDevice ${SRC} ${BPDevice} ${FileDevice} ${Config})
 
 
-target_link_libraries(SampleDevice  Qt5::Core Qt5::Widgets ${BPLib})
+target_link_libraries(SampleDevice  Qt5::Core Qt5::Widgets  filter ${BPLib})
 
 target_include_directories(SampleDevice PUBLIC "./src")
 target_include_directories(SampleDevice PRIVATE "./src/BPDevice" "./src/FileDevice"  "./src/Config" ${BPInclude})
