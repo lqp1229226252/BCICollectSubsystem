@@ -82,18 +82,18 @@ void WBGWIdget::setConnect()
        this->showMinimized();
     });
 
-//    connect(indexWidget,&IndexWidget::maxSingal,this,[=](){
-//           if(isMaximized){
-//               this->showNormal();
-//               isMaximized=0;
-//               m_widget->resize(1263, 770);
-//           }
-//           else{
-//               this->showMaximized();
-//               isMaximized=1;
-//               m_widget->resize(1920, 977);
-//            }
-//        });
+    connect(indexWidget,&IndexWidget::maxSingal,this,[=](){
+           if(isMaximized){
+               this->showNormal();
+               isMaximized=0;
+//               this->resize(1263, 770);
+           }
+           else{
+               this->showMaximized();
+               isMaximized=1;
+//               this->resize(1920, 977);
+            }
+        });
     setMoniotrConnect();
     setTCPConnect();
     setFTPReviceConnect();
