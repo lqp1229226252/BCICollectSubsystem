@@ -4,6 +4,7 @@
 #define TESTENABLE 0
 #include "QThread"
 #include "SampleDevice.h"
+#include "filter.h"
 class DataThread:public QThread
 {
     Q_OBJECT
@@ -22,6 +23,7 @@ private:
     SampleDevice *device;
     bool status;
     bool destroyFlag;
+    Filter filter;
 };
 
 #endif // DATATHREAD_H

@@ -20,6 +20,10 @@ FileStorage::~FileStorage()
 }
 void FileStorage::append_eeg(QList<double> data)
 {
+    if(data.isEmpty())
+    {
+        return;
+    }
     if(start_flag&&(!pause_flag))
     {
         for(QList<double>::const_iterator begin=data.begin();begin!=data.end();begin++)
