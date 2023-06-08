@@ -52,6 +52,11 @@ void DataThread::run()
                 }
             }
         }
+        if(destroyFlag)
+        {
+            destroyFlag=false;
+            return;
+        }
     }
 }
 void DataThread::setStatus(bool value)

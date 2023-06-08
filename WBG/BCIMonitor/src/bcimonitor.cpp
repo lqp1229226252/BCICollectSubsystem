@@ -206,7 +206,7 @@ void BCIMonitor::setProcessDataConnect()
 void BCIMonitor::initCurveGroup()
 {
     int curve_num_group=6;
-    int sample_point=1000;
+    int sample_point=2400;
     curvegroup=new CurveGroup();
     this->setCentralWidget(curvegroup);
     curvegroup->setMaxPoint(sample_point);
