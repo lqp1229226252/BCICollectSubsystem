@@ -8,6 +8,10 @@ start_game::start_game(QWidget *parent) :
     ui(new Ui::start_game)
 {
     ui->setupUi(this);
+
+    ui->auxiliary_set_btn->setStyleSheet("QToolButton{background: #FFFFFF;font: 16pt Alibaba PuHuiTi 2.0; color: rgb(255, 255, 255);background: linear-gradient(180deg, #487FD4 0%, #4FD7EE 100%);border-radius: 8px; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #487FD4, stop:1 #4FD7EE);}");
+    ui->start_btn->setStyleSheet("QPushButton{background: #FFFFFF;font: 16pt Alibaba PuHuiTi 2.0; color: rgb(255, 255, 255);background: linear-gradient(180deg, #487FD4 0%, #4FD7EE 100%);border-radius: 8px; background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #487FD4, stop:1 #4FD7EE);}");
+
 }
 void start_game::addGame(QList<GameData> data)
 {

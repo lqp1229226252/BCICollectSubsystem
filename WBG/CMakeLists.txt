@@ -19,6 +19,7 @@ file(GLOB PersonalData "PersonalData/*")
 file(GLOB StartGameWidget "StartGameWidget/*")
 file(GLOB StoreWidget "StoreWidget/*")
 file(GLOB UserGameWidget "UserGameWidget/src/*")
+file(GLOB TempWidget "TempWidget/*")
 
 #BCIMonitor
 add_subdirectory(BCIMonitor)
@@ -31,13 +32,13 @@ add_subdirectory(Login)
 add_library(WBG
     ${IndexWidget} ${IntroduceWidget} ${PersonalData}
     ${StartGameWidget} ${StoreWidget} ${UserGameWidget}
-    ${FTPServerWidget}
+    ${FTPServerWidget} ${TempWidget}
     )
 
 target_link_libraries(WBG PUBLIC Qt5::Widgets Qt5::Multimedia Qt5::Charts Qt5::MultimediaWidgets
-                    BCIMonitor BCIGameOverData TCPTool FTPServer FTPUploadFile Login)
+                    BCIMonitor BCIGameOverData TCPTool FTPServer FTPUploadFile Login )
 
 target_include_directories(WBG PUBLIC  "IndexWidget"
     "IntroduceWidget" "PersonalData"
     "StartGameWidget"  "StoreWidget"
-    "UserGameWidget/src")
+    "UserGameWidget/src" "TempWidget")

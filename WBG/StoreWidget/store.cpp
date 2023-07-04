@@ -13,9 +13,9 @@ Store::Store(QWidget *parent) :
     ui(new Ui::Store)
 {
     ui->setupUi(this);
-    ui->play_current_list->setIconSize(QSize(30, 30));
-    ui->play_current_list->setHorizontalScrollMode(QListWidget::ScrollPerPixel);
-    ui->welfare_center_list->setVerticalScrollMode(QListWidget::ScrollPerPixel);
+//    ui->play_current_list->setIconSize(QSize(30, 30));
+//    ui->play_current_list->setHorizontalScrollMode(QListWidget::ScrollPerPixel);
+//    ui->welfare_center_list->setVerticalScrollMode(QListWidget::ScrollPerPixel);
     playCurrentGameList = new QStringList;
 
     addGame();
@@ -25,45 +25,76 @@ Store::Store(QWidget *parent) :
     initWelfareCenterItems();
 
     initWelfareCenter();
+
+    //添加轮播图
+    m_pPicurePlay = new MPicturePlayer(ui->widget_main_logo);
+    m_pPicurePlay->setAutoRun();
+    setText();
+
 }
+
+void Store::setText()
+{
+    for (int i=0;i<20 ;i++ ) {
+       CLastNewItem* plastnew = new CLastNewItem(this);
+       ui->horizontalLayout_new->addWidget(plastnew);
+    }
+    for (int i=0;i<20 ;i++ ) {
+       CRecenePlayingItem* prplaying = new CRecenePlayingItem(this);
+       ui->verticalLayout_playing->addWidget(prplaying);
+    }
+    for (int i=0;i<20 ;i++ ) {
+       CActMore* pmore = new CActMore(this);
+       ui->verticalLayout_more->addWidget(pmore);
+    }
+    for (int i=0;i<20 ;i++ ) {
+       CActMore* pact = new CActMore(this);
+       ui->verticalLayout_free->addWidget(pact);
+    }
+
+}
+
+
 void Store::addGame()
 {
-    initPlayCurrentList();
-    qDebug() << playCurrentGameList->size();
-    for (int i = 0; i < playCurrentGameList->size(); ++i) {
-        QListWidgetItem *item = new QListWidgetItem;
-        item->setIcon(playCurrentIconList[i]);
-        item->setText(playCurrentGameList->at(i));
+//    initPlayCurrentList();
+//    qDebug() << playCurrentGameList->size();
+//    for (int i = 0; i < playCurrentGameList->size(); ++i) {
+//        QListWidgetItem *item = new QListWidgetItem;
+//        item->setIcon(playCurrentIconList[i]);
+//        item->setText(playCurrentGameList->at(i));
 
-        ui->play_current_list->addItem(item);
-    }
+//        ui->play_current_list->addItem(item);
+//    }
 }
+
+//注释区域
 void Store::newGame()
 {
 //    ui->new_game_list->addItem("日期：2022/9/25             ");
 //    ui->new_game_list->addItem("日期：2022/9/25             ");
 //    ui->new_game_list->addItem("...");
-    initNewGameList();
+//    initNewGameList();
 
-    QListIterator<newgameitem *> iter(newGameList);
-    while(iter.hasNext()){
-        QListWidgetItem *qitem = new QListWidgetItem;
-        qitem->setSizeHint(QSize(140,210));
-        ui->new_game_list->addItem(qitem);
-        ui->new_game_list->setItemWidget(qitem, iter.next());
-    }
+//    QListIterator<newgameitem *> iter(newGameList);
+//    while(iter.hasNext()){
+//        QListWidgetItem *qitem = new QListWidgetItem;
+//        qitem->setSizeHint(QSize(140,210));
+//        ui->new_game_list->addItem(qitem);
+//        ui->new_game_list->setItemWidget(qitem, iter.next());
+//    }
 
-    ui->gamePicA->setPixmap(demoGame[0]);
-    ui->gamePicB->setPixmap(demoGame[1]);
+//    ui->gamePicA->setPixmap(demoGame[0]);
+//    ui->gamePicB->setPixmap(demoGame[1]);
 
 
 }
 void Store::game_point_list()
 {
-    ui->game_point_list->addItem("当前积分：");
-    ui->game_point_list->addItem("1000积分：消费券");
-    ui->game_point_list->addItem("5000积分：一桶油");
-    ui->game_point_list->addItem("荣誉称号：强脑健将（连续30天）= 5000分");
+//    ui->game_point_list->addItem("当前积分：");
+//    ui->game_point_list->addItem("1000积分：消费券");
+//    ui->game_point_list->addItem("5000积分：一桶油");
+//    ui->game_point_list->addItem("荣誉称号：强脑健将（连续30天）= 5000分");
 
 }
 
@@ -71,10 +102,10 @@ void Store::initNewGameList(){
 
     // 列表
     QList<QString> imgList;
-    imgList.append("pic/res/cover/0.png");
-    imgList.append("pic/res/cover/1.png");
-    imgList.append("pic/res/cover/2.png");
-    imgList.append("pic/res/cover/3.png");
+    imgList.append(":/res/cover/0.png");
+    imgList.append(":/res/cover/1.png");
+    imgList.append(":/res/cover/2.png");
+    imgList.append(":/res/cover/3.png");
 
     QListIterator<QString> iter(imgList);
     while(iter.hasNext()){
@@ -85,16 +116,16 @@ void Store::initNewGameList(){
     }
 
     // 两个试玩游戏展示
-    demoGame.append(QPixmap("pic/res/dynamic/0.png"));
-    demoGame.append(QPixmap("pic/res/dynamic/1.png"));
+    demoGame.append(QPixmap(":/res/dynamic/0.png"));
+    demoGame.append(QPixmap(":/res/dynamic/1.png"));
 
 }
 
 void Store::initPlayCurrentList(){
-    playCurrentIconList.append(QIcon("pic/res/0.png"));
-    playCurrentIconList.append(QIcon("pic/res/1.png"));
-    playCurrentIconList.append(QIcon("pic/res/2.png"));
-    playCurrentIconList.append(QIcon("pic/res/3.png"));
+    playCurrentIconList.append(QIcon(":/res/0.png"));
+    playCurrentIconList.append(QIcon(":/res/1.png"));
+    playCurrentIconList.append(QIcon(":/res/2.png"));
+    playCurrentIconList.append(QIcon(":/res/3.png"));
 
     playCurrentGameList->append("注意训练");
     playCurrentGameList->append("记忆训练");
@@ -111,7 +142,7 @@ void Store::initWelfareCenterMap(){
     welFareCenterMap.insert("手眼协调训练","春风纸鸢活动现实返场");
 
 }
-
+//福利中心
 void Store::initWelfareCenterItems(){
     QMapIterator<QString, QString> map(welFareCenterMap);
     while(map.hasNext()){
@@ -124,21 +155,26 @@ void Store::initWelfareCenterItems(){
     }
 
 }
-
+//福利中心
 void Store::initWelfareCenter(){
 
-    QListIterator<WelfareCenter *> iter(welfareCenterItems);
-    while(iter.hasNext()){
-        QListWidgetItem *item = new QListWidgetItem;
-        item->setSizeHint(QSize(290, 100));
+//    QListIterator<WelfareCenter *> iter(welfareCenterItems);
+//    while(iter.hasNext()){
+//        QListWidgetItem *item = new QListWidgetItem;
+//        item->setSizeHint(QSize(290, 100));
 
-        ui->welfare_center_list->addItem(item);
-        ui->welfare_center_list->setItemWidget(item, iter.next());
-    }
+//        ui->welfare_center_list->addItem(item);
+//        ui->welfare_center_list->setItemWidget(item, iter.next());
+//    }
 
 }
 
 Store::~Store()
 {
     delete ui;
+}
+
+void Store::on_widget_main_logo_customContextMenuRequested(const QPoint &pos)
+{
+
 }

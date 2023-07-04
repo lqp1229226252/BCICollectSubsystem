@@ -8,6 +8,11 @@
 #include "gameitem.h"
 #include "dynamicdata.h"
 #include "dynamicitem.h"
+#include "CGameItem.h"
+#include "CNoticeItem.h"
+#include "CGameUpdateItem.h"
+#include"CPalyingItem.h"
+#include "CGameViewItem.h"
 namespace Ui {
 class UserGameWidget;
 }
@@ -24,6 +29,7 @@ public:
     void addGame(QList<GameData> data);
     void setGameOverview(QList<GameData> data);
     void setGameDynamic(QList<DynamicData> data);
+    void setText();
 
 private:
     Ui::UserGameWidget *ui;

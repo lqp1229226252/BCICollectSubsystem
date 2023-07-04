@@ -54,6 +54,7 @@ void itemChart::showPolarChart()
 
     //准备极坐标对象
     polarChart = new QPolarChart();
+    polarChart->setBackgroundVisible(false);
     polarChart->setTheme(QChart::ChartThemeBlueCerulean);
     chartView->setChart(polarChart);
     polarChart->setFocusPolicy(Qt::NoFocus);
@@ -150,7 +151,7 @@ void itemChart::showLineChart()
     chart = new QChart();
     chart->setTheme(QChart::ChartThemeBlueCerulean);
     chart->legend()->hide();
-
+    chart->setBackgroundVisible(false);
     chartView->setChart(chart);
     chartView->setRenderHint(QPainter::Antialiasing);
 
@@ -246,7 +247,7 @@ void itemChart::showBarChart()
 
     chart = new QChart();
     chart->setTheme(QChart::ChartThemeBlueCerulean);
-
+    chart->setBackgroundVisible(false);
     chartView->setChart(chart);
 
     // 准备维度信息

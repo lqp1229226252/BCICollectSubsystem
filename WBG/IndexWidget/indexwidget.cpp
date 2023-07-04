@@ -26,35 +26,71 @@ void IndexWidget::init()
 
     //初始化选项卡
     this->tabBar->addTab(u8"上一页");
+//修改
 
-    this->tabBar->setStyleSheet("QTabWidget::pane{"
-                                "   border:none;}"
-                                "QTabWidget::tab-bar {"
-                                "   left: 5px;"
-                                "}"
-                                "QTabBar::tab {"
-                                "   background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.278409 #000000, stop:1 #1E90FF);"
-                                "   border: 2px solid #C4C4C3;"
-                                "   border-bottom-color: #C2C7CB;"
-                                "   border-top-left-radius: 10px;"
-                                "   border-top-right-radius: 10px;"
-                                "   min-width: 80px;"
-                                "   padding: 5px;"
-                                "   color:white;"
-                                "   margin:10px 2px 0px 2px;"
-                                "}"
-                                "QTabBar::tab:selected{"
-                                "   background-color: #00BFFF;"
-                                "}"
-                                "QTabBar::tab:hover{"
-                                "   background-color: #1E90FF;"
-                                "}");
+    //原有样式表
+    /*"QTabWidget::pane{"
+                                    "   border:none;}"
+                                    "QTabWidget::tab-bar {"
+                                    "   left: 5px;"
+                                    "}"
+                                    "QTabBar::tab {"
+                                    "   background: qlineargradient(spread:pad, x1:0, y1:0, x2:1, y2:1, stop:0.278409 #000000, stop:1 #1E90FF);"
+                                    "   border: 2px solid #C4C4C3;"
+                                    "   border-bottom-color: #C2C7CB;"
+                                    "   border-top-left-radius: 10px;"
+                                    "   border-top-right-radius: 10px;"
+                                    "   min-width: 80px;"
+                                    "   padding: 5px;"
+                                    "   color:white;"
+                                    "   margin:10px 2px 0px 2px;"
+                                    "}"*/
+
+//    "QTabBar::tab:selected{"
+//    "   background-color: #00BFFF;"
+//    "}"
+
+
+    this->tabBar->setStyleSheet(
+                "QTabBar{qproperty-drawBase:0;}"
+                "QTabWidget::pane{"
+
+                "}"
+                "QTabBar::tab {"
+                "font:24px 黑体;"
+                "border:none;"
+                "   min-height:50px;"
+                "   min-width: 90px;"
+                "   padding: 5px;"
+                "   color:white;"
+                "   margin:10px 2px 0px 2px;"
+                "}"
+
+
+
+
+               "QTabBar::tab:selected{"
+                "   background-color: #1E90FF;"
+                "   background-image: url(:/image/tz.png);"
+                "   color:white;"
+                "   border-radius:5px;"
+                "}"
+
+                "QTabBar::tab:pressed{"
+                "   background-color: #1E90FF;"
+                "   background-image: url(:/image/tz.png);"
+                "   color:white;"
+                "}"
+
+
+                );
+
 
     //设置最大化最小化图标   因为在代码中实现图片会导致按压成exe文件后会看不见，所以此步骤转到qss中完成操作。
 //    ui->min->setIcon(QIcon("./image/min.png"));
 //    ui->max->setIcon(QIcon("./image/max.png"));
 //    ui->close->setIcon(QIcon("./image/close.png"));
-//    setStyle();
+ //   setStyle();
 //    //信号链接
     connect(this->tabBar,&QTabBar::tabBarClicked,this,&IndexWidget::tabClickSlot);
 }

@@ -8,7 +8,9 @@
 #include <QPixmap>
 #include <QMediaPlaylist>
 #include <QTimer>
-
+#include "MPicturePlayer.h"
+#include "CFuncDetial.h"
+#include "CProduct.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class IntroduceWidget; }
 QT_END_NAMESPACE
@@ -43,6 +45,14 @@ private:
     QTimer *timer;
     // 进度条总长度
     int maxvalue = 1000;
+
+    MPicturePlayer * m_pPicturePlayer;
+
+
+    void setFuncList();
+
+
+    void setProductList();
 
 private slots:
     void onStateChanged(QMediaPlayer::State);

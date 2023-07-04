@@ -14,9 +14,7 @@
    <string>WBGWIdget</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">*{
-	background:rgb(37, 42, 49);
-}</string>
+   <string notr="true"/>
   </property>
   <layout class="QGridLayout" name="gridLayout">
    <property name="leftMargin">

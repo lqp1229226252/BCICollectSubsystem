@@ -1,0 +1,306 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CUserSignPage</class>
+ <widget class="QDialog" name="CUserSignPage">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>890</width>
+    <height>892</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>890</width>
+    <height>892</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>890</width>
+    <height>892</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Dialog</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget_sign_out" native="true">
+     <property name="minimumSize">
+      <size>
+       <width>890</width>
+       <height>892</height>
+      </size>
+     </property>
+     <property name="maximumSize">
+      <size>
+       <width>890</width>
+       <height>892</height>
+      </size>
+     </property>
+     <property name="styleSheet">
+      <string notr="true">QWidget#widget_sign_out{
+background: #111111;
+}</string>
+     </property>
+     <layout class="QGridLayout" name="gridLayout_3">
+      <property name="leftMargin">
+       <number>104</number>
+      </property>
+      <property name="topMargin">
+       <number>38</number>
+      </property>
+      <property name="rightMargin">
+       <number>104</number>
+      </property>
+      <property name="bottomMargin">
+       <number>47</number>
+      </property>
+      <property name="spacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <layout class="QVBoxLayout" name="verticalLayout_2">
+        <property name="spacing">
+         <number>24</number>
+        </property>
+        <item>
+         <widget class="QLabel" name="label">
+          <property name="minimumSize">
+           <size>
+            <width>0</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>16777215</width>
+            <height>50</height>
+           </size>
+          </property>
+          <property name="styleSheet">
+           <string notr="true">color: #FFFFFF;
+font: 24pt &quot;Alibaba PuHuiTi 2.0&quot;;</string>
+          </property>
+          <property name="text">
+           <string>用户注册信息管理</string>
+          </property>
+         </widget>
+        </item>
+        <item>
+         <layout class="QVBoxLayout" name="verticalLayout">
+          <property name="spacing">
+           <number>24</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_one" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>628</width>
+              <height>175</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>628</width>
+              <height>175</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid #4DA9FF</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <property name="leftMargin">
+              <number>23</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>23</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_user">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_one_2" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>628</width>
+              <height>216</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>628</width>
+              <height>311</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid #4DA9FF</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <property name="leftMargin">
+              <number>23</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>23</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_exp">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_one_3" native="true">
+            <property name="minimumSize">
+             <size>
+              <width>628</width>
+              <height>216</height>
+             </size>
+            </property>
+            <property name="maximumSize">
+             <size>
+              <width>628</width>
+              <height>216</height>
+             </size>
+            </property>
+            <property name="styleSheet">
+             <string notr="true">border: 2px solid #4DA9FF</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <property name="leftMargin">
+              <number>23</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>23</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <layout class="QVBoxLayout" name="verticalLayout_body">
+               <property name="spacing">
+                <number>0</number>
+               </property>
+              </layout>
+             </item>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+        <item>
+         <widget class="QWidget" name="widget" native="true">
+          <layout class="QGridLayout" name="gridLayout_2">
+           <item row="0" column="0">
+            <layout class="QHBoxLayout" name="horizontalLayout">
+             <item>
+              <spacer name="horizontalSpacer">
+               <property name="orientation">
+                <enum>Qt::Horizontal</enum>
+               </property>
+               <property name="sizeHint" stdset="0">
+                <size>
+                 <width>40</width>
+                 <height>20</height>
+                </size>
+               </property>
+              </spacer>
+             </item>
+             <item>
+              <widget class="QPushButton" name="btn_ok">
+               <property name="minimumSize">
+                <size>
+                 <width>191</width>
+                 <height>54</height>
+                </size>
+               </property>
+               <property name="maximumSize">
+                <size>
+                 <width>191</width>
+                 <height>54</height>
+                </size>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">background: #FFFFFF;
+font: 16pt &quot;Alibaba PuHuiTi 2.0&quot;;
+color: rgb(255, 255, 255);
+background: linear-gradient(180deg, #487FD4 0%, #4FD7EE 100%);
+border-radius: 8px;
+background-color: qlineargradient(spread:pad, x1:0, y1:0, x2:0, y2:1, stop:0 #487FD4, stop:1 #4FD7EE);
+</string>
+               </property>
+               <property name="text">
+                <string>完成</string>
+               </property>
+               <property name="default">
+                <bool>true</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </item>
+          </layout>
+         </widget>
+        </item>
+       </layout>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

@@ -11,7 +11,7 @@
 #include <QPixmap>
 #include <QMediaPlaylist>
 #include <QTimer>
-
+//改动位置
 IntroduceWidget::IntroduceWidget(QWidget *parent)
     : QWidget(parent)
     , ui(new Ui::IntroduceWidget)
@@ -22,6 +22,21 @@ IntroduceWidget::IntroduceWidget(QWidget *parent)
 
     // 初始化播放器
     initPlayer();
+
+    //添加
+    m_pPicturePlayer = new MPicturePlayer(this);
+    ui->verticalLayout_2->addWidget(m_pPicturePlayer);
+    m_pPicturePlayer->setFirsrt();
+    //
+    setFuncList();
+    setProductList();
+    setAutoFillBackground(true);
+
+    QPalette palette;
+    QPixmap pix("qrc:/image/image/bg.png");
+    palette.setBrush(QPalette::Window,pix);
+    this->setPalette(palette);
+
 }
 
 IntroduceWidget::~IntroduceWidget()
@@ -42,7 +57,7 @@ void IntroduceWidget::init()
     ui->videoSlider->setEnabled(false);
 
     // 设置大小
-    vw->setFixedSize(580, 350);
+    vw->setFixedSize(650, 280);
 
     // 将vw放到布局当中
     vBox->addWidget(vw);
@@ -73,8 +88,10 @@ void IntroduceWidget::init()
 // 初始化播放器
 void IntroduceWidget::initPlayer(){
 
-    //设置播放内容
+    //设置播放内容 D:\CUIT\bci\BCIV1.9\video
+
     QString path=QCoreApplication::applicationDirPath()+"/video/test_games.mp4";
+
     player->setMedia(QUrl::fromLocalFile(path));
 
     player->setVideoOutput(vw);
@@ -185,3 +202,22 @@ void IntroduceWidget::onTimerOut(){
     ui->videoSlider->setValue(player->position()*maxvalue/player->duration());
 }
 
+void IntroduceWidget::setFuncList()
+{
+    for (int i=0;i<2 ;i++ ) {
+        CFuncDetial* pFunDetail = new CFuncDetial(this);
+        ui->gridLayout_funlist->addWidget(pFunDetail,i,0);
+        CFuncDetial* pFunDetail2 = new CFuncDetial(this);
+        ui->gridLayout_funlist->addWidget(pFunDetail2,i,1);
+    }
+}
+
+void IntroduceWidget::setProductList()
+{
+    //设置产品
+    for (int i=0;i<4 ;i++ ) {
+        CProduct * ptempProduct = new CProduct(this);
+        ui->verticalLayout_productList->addWidget(ptempProduct);
+    }
+
+}

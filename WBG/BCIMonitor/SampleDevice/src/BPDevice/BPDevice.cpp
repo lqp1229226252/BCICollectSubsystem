@@ -3,6 +3,7 @@
 #include "QDebug"
 BPDevice::BPDevice()
 {
+    Set10_20();
 }
 BPDevice::~BPDevice()
 {
@@ -121,14 +122,17 @@ bool BPDevice::GetBaseSampleRateRange(QVector<float> &range)
 bool BPDevice::SetChannelLabel(std::string channel_label)
 {
     this->labels=QString::fromStdString(channel_label).split(",");
-    return CStorage::SetChannelLabels(this->amplifier.m_hAmplifier,channel_label.c_str());
+    return true;
+//    return CStorage::SetChannelLabels(this->amplifier.m_hAmplifier,channel_label.c_str());
 }
 bool BPDevice::Set10_20()
 {
-    QString channel_label="Fp1,Fp2,F3,F4,C3,C4,P3,P4,O1,O2,F7,F8,T7,T8,P7,P8,Fz,Cz,Pz,IO,FC1,FC2,CP1,CP2,FC5,FC6,CP5,CP6,FT9,FT10,TP9,TP10";
+    QString channel_label="Fp1,Fp2,F7,F3,Fz,F4,F8,FC5,FC1,FC2,FC6,T7,C3,Cz,C4,T8,TP9,CP5,CP1,CP2,CP6,TP10,P7,P3,Pz,P4,P8,PO9,O1,Oz,O2,PO10";
     labels=channel_label.split(",");
     SampleDevice::readChanlocs(labels);
-    return this->SetChannelLabel(channel_label.toStdString().c_str());
+    return true;
+//    std::string channel_label="Fp1,Fp2,F7,F3,Fz,F4,F8,FC5,FC1,FC2,FC6,T7,C3,Cz,C4,T8,TP9,CP5,CP1,CP2,CP6,TP10,P7,P3,Pz,P4,P8,PO9,O1,Oz,O2,PO10";
+    //    return this->SetChannelLabel(channel_label.c_str());
 }
 
 bool BPDevice::setResistanceValue(int value)
@@ -153,10 +157,12 @@ bool BPDevice::setHighPass(float value)
          int res=amplifier.SetProperty(value,i,CPROP_F32_HighPass);
          if(res!=AMP_OK)
          {
-            return false;
+             return false;
          }
     }
-    return true;
+    {
+        return true;
+    }
 }
 
 bool BPDevice::setLowPass(float value)
@@ -166,10 +172,12 @@ bool BPDevice::setLowPass(float value)
          int res=amplifier.SetProperty(value,i,CPROP_F32_LowPass);
          if(res!=AMP_OK)
          {
-            return res;
+             return false;
          }
     }
-    return true;
+    {
+        return true;
+    }
 }
 void BPDevice::StartGetData(int model)
 {
@@ -199,14 +207,6 @@ bool BPDevice::ConnectDevice(int DeviceId)
     }
     else
     {
-        //设置标签
-        Set10_20();
-        //设置滤波
-        setHighPass(0.5);
-        if(!setLowPass(70))
-        {
-           qDebug()<<"滤波设置失败";
-        }
         return true;
     }
 }

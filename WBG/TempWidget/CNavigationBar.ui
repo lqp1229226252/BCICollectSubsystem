@@ -1,0 +1,675 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>CNavigationBar</class>
+ <widget class="QWidget" name="CNavigationBar">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1302</width>
+    <height>80</height>
+   </rect>
+  </property>
+  <property name="sizePolicy">
+   <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+    <horstretch>0</horstretch>
+    <verstretch>0</verstretch>
+   </sizepolicy>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <layout class="QGridLayout" name="gridLayout">
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <item row="0" column="0">
+    <widget class="QWidget" name="widget_out" native="true">
+     <layout class="QGridLayout" name="gridLayout_12">
+      <property name="leftMargin">
+       <number>0</number>
+      </property>
+      <property name="topMargin">
+       <number>0</number>
+      </property>
+      <property name="rightMargin">
+       <number>0</number>
+      </property>
+      <property name="bottomMargin">
+       <number>0</number>
+      </property>
+      <property name="horizontalSpacing">
+       <number>10</number>
+      </property>
+      <property name="verticalSpacing">
+       <number>0</number>
+      </property>
+      <item row="0" column="0">
+       <layout class="QHBoxLayout" name="horizontalLayout_4">
+        <property name="spacing">
+         <number>10</number>
+        </property>
+        <item>
+         <widget class="QWidget" name="widget_logo" native="true">
+          <property name="minimumSize">
+           <size>
+            <width>167</width>
+            <height>0</height>
+           </size>
+          </property>
+          <property name="maximumSize">
+           <size>
+            <width>167</width>
+            <height>16777215</height>
+           </size>
+          </property>
+          <layout class="QHBoxLayout" name="horizontalLayout_2">
+           <property name="spacing">
+            <number>0</number>
+           </property>
+           <property name="leftMargin">
+            <number>30</number>
+           </property>
+           <property name="topMargin">
+            <number>0</number>
+           </property>
+           <property name="rightMargin">
+            <number>0</number>
+           </property>
+           <property name="bottomMargin">
+            <number>0</number>
+           </property>
+           <item>
+            <widget class="QLabel" name="label_logo">
+             <property name="minimumSize">
+              <size>
+               <width>33</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="maximumSize">
+              <size>
+               <width>33</width>
+               <height>24</height>
+              </size>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">border-image: url(:/image/image/Vector.png);
+color: #FFFFFF;
+font: 28px &quot;黑体&quot;;
+</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignRight|Qt::AlignTrailing|Qt::AlignVCenter</set>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QLabel" name="label_logo_name">
+             <property name="sizePolicy">
+              <sizepolicy hsizetype="Expanding" vsizetype="Preferred">
+               <horstretch>0</horstretch>
+               <verstretch>0</verstretch>
+              </sizepolicy>
+             </property>
+             <property name="styleSheet">
+              <string notr="true">color: #FFFFFF;
+font: 28px &quot;黑体&quot;;</string>
+             </property>
+             <property name="text">
+              <string>WBG</string>
+             </property>
+             <property name="alignment">
+              <set>Qt::AlignCenter</set>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </widget>
+        </item>
+        <item>
+         <layout class="QHBoxLayout" name="horizontalLayout">
+          <property name="spacing">
+           <number>0</number>
+          </property>
+          <property name="leftMargin">
+           <number>0</number>
+          </property>
+          <item>
+           <widget class="QWidget" name="widget_main" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_main:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_10">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btn_main">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color: #FFFFFF;
+font: 24px &quot;黑体&quot;;
+}
+QPushButton:hover{
+
+}
+QPushButton:checked{
+	
+}</string>
+               </property>
+               <property name="text">
+                <string>主页</string>
+               </property>
+               <property name="checkable">
+                <bool>false</bool>
+               </property>
+               <property name="checked">
+                <bool>false</bool>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_about_me" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_about_me:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_9">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btn_about_me">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color: #FFFFFF;
+font: 24px &quot;黑体&quot;;
+}
+QPushButton:hover{
+
+}
+QPushButton:checked{
+	
+}</string>
+               </property>
+               <property name="text">
+                <string>与我相关</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_shop" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_shop:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_8">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btn_shop">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color: #FFFFFF;
+font: 24px &quot;黑体&quot;;
+}
+QPushButton:hover{
+
+}
+QPushButton:checked{
+	
+}</string>
+               </property>
+               <property name="text">
+                <string>商店</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_eeg" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_eeg:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_7">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btn_eeg">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color: #FFFFFF;
+font: 24px &quot;黑体&quot;;
+}
+QPushButton:hover{
+
+}
+QPushButton:checked{
+	
+}</string>
+               </property>
+               <property name="text">
+                <string>EEG采集</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_live" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_live:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_6">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btn_live">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color: #FFFFFF;
+font: 24px &quot;黑体&quot;;
+}
+QPushButton:hover{
+
+}
+QPushButton:checked{
+	
+}</string>
+               </property>
+               <property name="text">
+                <string>直播</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_view" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_vision:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_5">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btn_view">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color: #FFFFFF;
+font:16px &quot;黑体&quot;;
+}
+QPushButton:hover{
+
+}
+QPushButton:checked{
+	
+}</string>
+               </property>
+               <property name="text">
+                <string>个人干预
+数字可视化</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_person" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_person:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_4">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_load" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_load:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_3">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+             <item row="0" column="0">
+              <widget class="QPushButton" name="btn_load">
+               <property name="sizePolicy">
+                <sizepolicy hsizetype="Expanding" vsizetype="Expanding">
+                 <horstretch>0</horstretch>
+                 <verstretch>0</verstretch>
+                </sizepolicy>
+               </property>
+               <property name="styleSheet">
+                <string notr="true">QPushButton{
+color: #FFFFFF;
+font: 24px &quot;黑体&quot;;
+}
+QPushButton:hover{
+
+}
+QPushButton:checked{
+	
+}</string>
+               </property>
+               <property name="text">
+                <string>下载</string>
+               </property>
+               <property name="flat">
+                <bool>true</bool>
+               </property>
+              </widget>
+             </item>
+            </layout>
+           </widget>
+          </item>
+          <item>
+           <widget class="QWidget" name="widget_set" native="true">
+            <property name="styleSheet">
+             <string notr="true">QWidget#widget_set:hover{
+	image: url(:/image/image/tz.png);
+}</string>
+            </property>
+            <layout class="QGridLayout" name="gridLayout_2">
+             <property name="leftMargin">
+              <number>0</number>
+             </property>
+             <property name="topMargin">
+              <number>0</number>
+             </property>
+             <property name="rightMargin">
+              <number>0</number>
+             </property>
+             <property name="bottomMargin">
+              <number>0</number>
+             </property>
+             <property name="spacing">
+              <number>0</number>
+             </property>
+            </layout>
+           </widget>
+          </item>
+         </layout>
+        </item>
+       </layout>
+      </item>
+      <item row="0" column="1">
+       <widget class="QWidget" name="widget_2" native="true">
+        <property name="maximumSize">
+         <size>
+          <width>100</width>
+          <height>16777215</height>
+         </size>
+        </property>
+        <layout class="QGridLayout" name="gridLayout_11">
+         <property name="leftMargin">
+          <number>0</number>
+         </property>
+         <property name="topMargin">
+          <number>0</number>
+         </property>
+         <property name="rightMargin">
+          <number>0</number>
+         </property>
+         <property name="bottomMargin">
+          <number>0</number>
+         </property>
+         <property name="spacing">
+          <number>0</number>
+         </property>
+         <item row="0" column="0">
+          <layout class="QHBoxLayout" name="horizontalLayout_3">
+           <item>
+            <widget class="QPushButton" name="btn_min">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	image: url(:/image/image/min.png);
+}
+QPushButton:hover{
+	background-color: rgb(34, 189, 255);
+}</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_max">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	image: url(:/image/image/max.png);
+}
+QPushButton:hover{
+	background-color: rgb(34, 189, 255);
+}</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+           <item>
+            <widget class="QPushButton" name="btn_close">
+             <property name="styleSheet">
+              <string notr="true">QPushButton{
+	
+	image: url(:/image/image/close.png);
+}
+QPushButton:hover{
+	background-color: rgb(34, 189, 255);
+}</string>
+             </property>
+             <property name="flat">
+              <bool>true</bool>
+             </property>
+            </widget>
+           </item>
+          </layout>
+         </item>
+        </layout>
+       </widget>
+      </item>
+     </layout>
+    </widget>
+   </item>
+  </layout>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>

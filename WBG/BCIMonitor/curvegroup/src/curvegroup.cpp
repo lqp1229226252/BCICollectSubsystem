@@ -80,10 +80,6 @@ void CurveGroup::appendMark(QString mark)
 }
 void CurveGroup::append(QList<double> data)
 {
-    if(data.isEmpty())
-    {
-        return;
-    }
     QList<double> show_data;
     QList<double>::const_iterator begin=data.begin();
     QList<double>::const_iterator::difference_type n=current_group*curve_num_group;

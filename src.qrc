@@ -50,5 +50,6 @@
         <file>image/search.png</file>
         <file>image/close2.0.png</file>
         <file>image/min2.0.png</file>
+        <file>image/tz.png</file>
     </qresource>
 </RCC>

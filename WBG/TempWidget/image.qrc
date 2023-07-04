@@ -1,0 +1,27 @@
+<RCC>
+    <qresource prefix="/image">
+        <file>image/Rectangle 109.png</file>
+        <file>image/sy1.png</file>
+        <file>image/sy2.png</file>
+        <file>image/sy3.png</file>
+        <file>image/sy4.png</file>
+        <file>image/sy5.png</file>
+        <file>image/}VJ8@MZ(8B_UAH8NEXUL3)9.jpg</file>
+        <file>image/ai.jpg</file>
+        <file>image/bg.png</file>
+        <file>image/brain-5159706.png</file>
+        <file>image/btn_click.png</file>
+        <file>image/btn_n.png</file>
+        <file>image/circle-g360ac120a_1920.jpg</file>
+        <file>image/close.png</file>
+        <file>image/close2.0.png</file>
+        <file>image/Component 2.png</file>
+        <file>image/sci-fi-6770027_1920.jpg</file>
+        <file>image/image/warrior-7631678.jpg</file>
+        <file>image/horror-5042320_1920.jpg</file>
+        <file>image/left.png</file>
+        <file>image/right.png</file>
+        <file>image/soldier.jpg</file>
+        <file>image/image/soldier.jpg</file>
+    </qresource>
+</RCC>

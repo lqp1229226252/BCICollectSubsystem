@@ -45,7 +45,7 @@ file(GLOB SRC "src/*")
 add_subdirectory(WBG)
 
 
-add_executable(BCI WIN32 main.cpp src.qrc
+add_executable(BCI WIN32 main.cpp src.qrc  WBG/TempWidget/image.qrc
     ${MonitorRes} ${LoginRes} ${BCIGameOverDataRes}
     ${SRC})
 

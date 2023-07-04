@@ -16,6 +16,10 @@ WBGWIdget::WBGWIdget(QWidget *parent)
     LoginWidget->show();
     this->setWindowFlags(Qt::FramelessWindowHint); //不显示边框
 
+    QPalette palette;
+    QPixmap pix(":/image/image/bg.png");
+    palette.setBrush(QPalette::Window,pix);
+    this->setPalette(palette);
 
 
 
@@ -255,13 +259,13 @@ QList<DynamicData> createDynamicData()
 
 void WBGWIdget::initUserGameWidget()
 {
-    QList<GameData> gamedata=createData();
-    QList<DynamicData> dynamicdata=createDynamicData();
-    userGameWidget->addGame(gamedata);
-    userGameWidget->addGamePlay(gamedata);
-    userGameWidget->addGameUpdate(gamedata);
-    userGameWidget->setGameOverview(gamedata);
-    userGameWidget->setGameDynamic(dynamicdata);
+//    QList<GameData> gamedata=createData();
+//    QList<DynamicData> dynamicdata=createDynamicData();
+//    userGameWidget->addGame(gamedata);
+//    userGameWidget->addGamePlay(gamedata);
+//    userGameWidget->addGameUpdate(gamedata);
+//    userGameWidget->setGameOverview(gamedata);
+//    userGameWidget->setGameDynamic(dynamicdata);
 }
 
 QList<start_game::GameData> createGameData()

@@ -7,6 +7,10 @@
 #include "QListWidgetItem"
 #include "newgameitem.h"
 #include "welfarecenter.h"
+#include "MPicturePlayer.h"
+#include "CLastNewItem.h"
+#include "CRecenePlayingItem.h"
+#include "CActMore.h"
 
 namespace Ui {
 class Store;
@@ -28,6 +32,11 @@ public:
     void initWelfareCenterMap();
     void initWelfareCenterItems();
     void initWelfareCenter();
+    void setText();
+
+private slots:
+    void on_widget_main_logo_customContextMenuRequested(const QPoint &pos);
+
 private:
     Ui::Store *ui;
     QList<QListWidgetItem *> game;
@@ -41,6 +50,7 @@ private:
 
     QMap<QString, QString> welFareCenterMap;
     QList<WelfareCenter *> welfareCenterItems;
+    MPicturePlayer * m_pPicurePlay;
 };
 
 #endif // STORE_H

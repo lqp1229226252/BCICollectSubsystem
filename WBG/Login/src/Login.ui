@@ -32,15 +32,20 @@
    <string>Login</string>
   </property>
   <property name="styleSheet">
-   <string notr="true">*
-{
-	font: 7pt &quot;Arial&quot;;
+   <string notr="true">
+*{
+	
+	
+	font: 25 9pt &quot;Alibaba PuHuiTi 2.0&quot;;
+
+
 	color: rgb(118, 119, 121);
 }
 
 #label_2
 {
-	font: 14pt &quot;Blackadder ITC&quot;;
+	
+	font: 25 9pt &quot;Alibaba PuHuiTi 2.0&quot;;
 	color:rgb(255, 255, 255);
 }
 
@@ -72,6 +77,7 @@ QPushButton:pressed
 #lineEdit_account,#lineEdit_password
 {
 	background-color: rgb(49, 52, 59);
+	font: 25 12pt &quot;Alibaba PuHuiTi 2.0&quot;;
 	color:rgb(255, 255, 255);
 	border-style:none;
 	padding-left:10px;
@@ -201,15 +207,15 @@ outline:nonoe;</string>
     </property>
     <property name="font">
      <font>
-      <family>黑体</family>
-      <pointsize>-1</pointsize>
-      <weight>50</weight>
+      <family>Alibaba PuHuiTi 2.0</family>
+      <pointsize>20</pointsize>
+      <weight>3</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 28px &quot;黑体&quot;;
+     <string notr="true">font: 25 20pt &quot;Alibaba PuHuiTi 2.0&quot;;
 color: #4DA9FF;
 </string>
     </property>
@@ -247,15 +253,15 @@ color: #4DA9FF;
     </property>
     <property name="font">
      <font>
-      <family>Arial</family>
-      <pointsize>7</pointsize>
-      <weight>50</weight>
+      <family>Alibaba PuHuiTi 2.0</family>
+      <pointsize>12</pointsize>
+      <weight>3</weight>
       <italic>false</italic>
       <bold>false</bold>
      </font>
     </property>
     <property name="styleSheet">
-     <string notr="true">font: 7pt &quot;Arial&quot;;</string>
+     <string notr="true">font: 25 12pt &quot;Alibaba PuHuiTi 2.0&quot;;</string>
     </property>
     <property name="frame">
      <bool>true</bool>
@@ -414,7 +420,7 @@ QPushButton#pushButton_QRCode:hover{
     <cursorShape>PointingHandCursor</cursorShape>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 10pt &quot;Arial&quot;;</string>
+    <string notr="true">font: 25 12pt &quot;Alibaba PuHuiTi 2.0&quot;;</string>
    </property>
    <property name="text">
     <string>注册</string>
@@ -443,9 +449,9 @@ QPushButton#pushButton_QRCode:hover{
       </property>
       <property name="font">
        <font>
-        <family>Arial</family>
-        <pointsize>9</pointsize>
-        <weight>9</weight>
+        <family>Alibaba PuHuiTi 2.0</family>
+        <pointsize>12</pointsize>
+        <weight>3</weight>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -454,7 +460,7 @@ QPushButton#pushButton_QRCode:hover{
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+       <string notr="true">font: 25 12pt &quot;Alibaba PuHuiTi 2.0&quot;;</string>
       </property>
       <property name="text">
        <string>自动登录</string>
@@ -465,9 +471,9 @@ QPushButton#pushButton_QRCode:hover{
      <widget class="QCheckBox" name="checkBox_savePassword">
       <property name="font">
        <font>
-        <family>Arial</family>
-        <pointsize>9</pointsize>
-        <weight>9</weight>
+        <family>Alibaba PuHuiTi 2.0</family>
+        <pointsize>12</pointsize>
+        <weight>3</weight>
         <italic>false</italic>
         <bold>false</bold>
        </font>
@@ -476,7 +482,7 @@ QPushButton#pushButton_QRCode:hover{
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+       <string notr="true">font: 25 12pt &quot;Alibaba PuHuiTi 2.0&quot;;</string>
       </property>
       <property name="text">
        <string>保存密码</string>
@@ -489,7 +495,7 @@ QPushButton#pushButton_QRCode:hover{
        <cursorShape>PointingHandCursor</cursorShape>
       </property>
       <property name="styleSheet">
-       <string notr="true">font: 75 9pt &quot;Arial&quot;;</string>
+       <string notr="true">font: 25 11pt &quot;Alibaba PuHuiTi 2.0&quot;;</string>
       </property>
       <property name="text">
        <string>忘记密码?</string>
@@ -537,13 +543,13 @@ image: url(:/Login/Vector.png);</string>
     <font>
      <family>Alibaba PuHuiTi 2.0</family>
      <pointsize>20</pointsize>
-     <weight>10</weight>
+     <weight>3</weight>
      <italic>false</italic>
      <bold>false</bold>
     </font>
    </property>
    <property name="styleSheet">
-    <string notr="true">font: 81 20pt &quot;Alibaba PuHuiTi 2.0&quot;;</string>
+    <string notr="true">font: 25 20pt &quot;Alibaba PuHuiTi 2.0&quot;;</string>
    </property>
    <property name="text">
     <string>脑-器交互采集子系统</string>

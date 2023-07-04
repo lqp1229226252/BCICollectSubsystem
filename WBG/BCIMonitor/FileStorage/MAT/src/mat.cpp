@@ -118,7 +118,7 @@ void MAT::saveSrate(quint16 rate)
 void MAT::saveEevent(QVariantList event)
 {
     const char *event_item_field[8]={
-        "latency","duration","channel","bvtime","bvmknum",
+        "latency","duration","channel","bvtime","bvknum",
         "type","code","urevent"
     };
     size_t dim[2]={1,1};
@@ -166,7 +166,7 @@ void MAT::saveEevent(QVariantList event)
 void MAT::saveUrevent(QVariantList event)
 {
     const char *urevent_item_field[7]={
-        "latency","duration","channel","bvtime","bvmknum",
+        "latency","duration","channel","bvtime","bvknum",
         "type","code"
     };
     size_t dim[2]={1,1};
