@@ -124,6 +124,12 @@ void IntroduceWidget::initPlayer(){
 
 }
 
+void IntroduceWidget::UpdataInfo(QString account,QString name)
+{
+    ui->label_name->setText(name);
+    ui->label_id->setText(account);
+}
+
 void IntroduceWidget::onplaystopBtnClicked(){
     QMediaPlayer::State state;
     // get current state of player

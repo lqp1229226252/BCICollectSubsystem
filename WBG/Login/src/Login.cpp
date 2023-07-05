@@ -176,9 +176,9 @@ void Login::on_pushButton_land_clicked()
     connect(jsonOperation,&JsonOperation::landFailed,this,[=](){
         ShowMessageBox("登录失败","密码错误");
     });
-    connect(jsonOperation,&JsonOperation::landSucceed,this,[=](QString account){
+    connect(jsonOperation,&JsonOperation::landSucceed,this,[=](QString account,QString name){
         //登录成功
-        emit LoginSucceedSignal(account);  //在wbg里面找不到接收的地方
+        emit LoginSucceedSignal(account,name);  //在wbg里面找不到接收的地方
     });
 
     QString account = ui->lineEdit_account->text();

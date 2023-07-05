@@ -28,8 +28,12 @@ void JsonOperation::landID(QString account, QString password, int isAutoLand, in
         if(userAll.contains(account)){
             QJsonObject user=(userAll.find(account))->toObject();
             if(password == user.value("password").toString()){
-                emit landSucceed(account);
-//                qDebug()<<"登录成功";
+                QJsonObject onceInfo=(user.find("info"))->toObject();
+                QString name = onceInfo.value("name").toString();
+                emit landSucceed(account,name);
+//                qDebug()<<"登录成功:::::::::::::"<<user;
+//                qDebug()<<"登录成功:::::::::::::"<<onceInfo;
+//                qDebug()<<"登录成功:::::::::::::"<<name;
                 JsonInsertLstLand(account,password,isAutoLand,isSavePassword);
                 UpdataUser(account,isAutoLand,isSavePassword);
             }

@@ -70,11 +70,15 @@ void WBGWIdget::initParams()
 
 void WBGWIdget::setConnect()
 {
-    connect(LoginWidget,&Login::LoginSucceedSignal,[=](QString account){
+    connect(LoginWidget,&Login::LoginSucceedSignal,[=](QString account,QString name){
         this->account=account;  //登录成功后可以传来用户账号
+        this->name=name;
         this->showMaximized();
         LoginWidget->close();
         initFTP();
+
+        //更新主页用户信息
+        introduceWidget->UpdataInfo(account,name);
     });
 
     //点击indexwidget的关闭按钮后关闭整个程序

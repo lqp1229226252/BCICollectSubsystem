@@ -109,8 +109,9 @@ private:
 
     //mat文件保存路径
     QString saveMatPath;  //临时使用状态   ,麻烦确定后删除指定路径
-    //用户账号，用来接Login传来的账号：account
+    //登录成功后，传来的信息，用于显示：account，name用于接收
     QString account;
+    QString name;
     //用户所玩游戏，用来接收用户所玩游戏的编号，  测试阶段默认为0；
     int game_id=0;    //临时使用状态   ,麻烦确定后删除默认值 
 

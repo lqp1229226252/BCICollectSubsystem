@@ -58,7 +58,7 @@ private slots:
     void ShowMessageBox(QString,QString);
 
 signals:
-    void LoginSucceedSignal(QString);  //登录成功的信号
+    void LoginSucceedSignal(QString,QString);  //登录成功的信号
 
 
 

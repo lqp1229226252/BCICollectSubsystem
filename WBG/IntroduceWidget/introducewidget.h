@@ -26,6 +26,7 @@ public:
     void  init();
     void initPlayer();
 
+    void UpdataInfo(QString,QString);
 
 private:
     Ui::IntroduceWidget *ui;

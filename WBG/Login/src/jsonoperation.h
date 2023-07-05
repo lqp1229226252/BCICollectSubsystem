@@ -40,7 +40,7 @@ public:
 
 
 signals:
-    void landSucceed(QString); //登录成功
+    void landSucceed(QString,QString); //登录成功
     void landFailed();  //登录失败
     void absentUserRegister(); //该用户没有注册
     void absentAnyUser();   //没有任何用户
