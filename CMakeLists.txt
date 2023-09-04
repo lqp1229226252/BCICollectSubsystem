@@ -44,10 +44,9 @@ file(COPY ${MATDLL} DESTINATION ".")
 file(GLOB SRC "src/*")
 add_subdirectory(WBG)
 
-
 add_executable(BCI WIN32 main.cpp src.qrc  WBG/TempWidget/image.qrc
     ${MonitorRes} ${LoginRes} ${BCIGameOverDataRes}
-    ${SRC})
+    ${SRC} ${gamefinishres})
 
 
 target_link_libraries(BCI PRIVATE Qt5::Widgets Qt5::Sql WBG)

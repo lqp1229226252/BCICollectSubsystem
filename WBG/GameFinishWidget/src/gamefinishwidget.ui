@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>GameFinishWidget</class>
+ <widget class="QWidget" name="GameFinishWidget">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>869</width>
+    <height>605</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>0</width>
+    <height>0</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>Form</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true">background-color: rgb(255, 255, 255);</string>
+  </property>
+  <layout class="QHBoxLayout" name="horizontalLayout">
+   <property name="spacing">
+    <number>0</number>
+   </property>
+   <property name="leftMargin">
+    <number>0</number>
+   </property>
+   <property name="topMargin">
+    <number>0</number>
+   </property>
+   <property name="rightMargin">
+    <number>0</number>
+   </property>
+   <property name="bottomMargin">
+    <number>0</number>
+   </property>
+   <item>
+    <layout class="QVBoxLayout" name="radar_layout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="Radar" name="periceive_radar" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Radar" name="emotion_radar" native="true">
+       <property name="maximumSize">
+        <size>
+         <width>16777215</width>
+         <height>16777215</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="curve_layout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="ProgressBar" name="progressbar" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+      </widget>
+     </item>
+     <item>
+      <widget class="Curve" name="periceive_curve" native="true"/>
+     </item>
+     <item>
+      <widget class="Curve" name="emotion_curve" native="true">
+       <property name="minimumSize">
+        <size>
+         <width>0</width>
+         <height>0</height>
+        </size>
+       </property>
+       <property name="font">
+        <font>
+         <family>Adobe 宋体 Std L</family>
+        </font>
+       </property>
+      </widget>
+     </item>
+    </layout>
+   </item>
+   <item>
+    <layout class="QVBoxLayout" name="end_data_layout">
+     <property name="spacing">
+      <number>0</number>
+     </property>
+     <item>
+      <widget class="GameEndData" name="end_data" native="true"/>
+     </item>
+    </layout>
+   </item>
+  </layout>
+ </widget>
+ <customwidgets>
+  <customwidget>
+   <class>Radar</class>
+   <extends>QWidget</extends>
+   <header>chart\radar.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>Curve</class>
+   <extends>QWidget</extends>
+   <header>chart\curve.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>GameEndData</class>
+   <extends>QWidget</extends>
+   <header>data\gameenddata.h</header>
+   <container>1</container>
+  </customwidget>
+  <customwidget>
+   <class>ProgressBar</class>
+   <extends>QWidget</extends>
+   <header>progressbar/progressbar.h</header>
+   <container>1</container>
+  </customwidget>
+ </customwidgets>
+ <resources/>
+ <connections/>
+</ui>

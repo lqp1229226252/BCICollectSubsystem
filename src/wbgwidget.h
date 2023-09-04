@@ -25,10 +25,9 @@
 #include "uploadfilehandler.h"
 
 #include "savefiletobci.h"
-#include "gameoverwidget.h"
 
 #include "ftpserverwidget.h"
-
+#include "gamefinishwidget.h"
 QT_BEGIN_NAMESPACE
 namespace Ui { class WBGWIdget; }
 QT_END_NAMESPACE
@@ -63,9 +62,8 @@ private:
     Store *storeWidget;
     start_game *startGameWidget;
     //游戏结算页面
-    GameOverWidget *gameoverwidget;
-    void initGameEndWidget();
-    void setGameEndWidgetConnect();
+    GameFinishWidget *gamefinishwidget;
+    void initGameFinsihWidget();
     //主页
 //    MainWindow *mainwindow;
 

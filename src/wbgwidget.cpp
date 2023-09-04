@@ -29,6 +29,7 @@ WBGWIdget::~WBGWIdget()
 {
 //    m_process->kill();
     delete ui;
+    delete gamefinishwidget;
 //    delete indexWidget;
 //    delete introduceWidget;
 //    delete LoginWidget;
@@ -65,7 +66,7 @@ void WBGWIdget::initParams()
     initUserGameWidget();
     initIndexWidget();
     initStartGameWidget();
-    initGameEndWidget();
+    initGameFinsihWidget();
 }
 
 void WBGWIdget::setConnect()
@@ -188,14 +189,13 @@ void WBGWIdget::acceptGameAccount(QMap<QString, QString> map)
     initUploadFileHandler();
 }
 
-void WBGWIdget::initGameEndWidget()
+void WBGWIdget::initGameFinsihWidget()
 {
-    gameoverwidget=new GameOverWidget;
+    gamefinishwidget=new GameFinishWidget;
+
+    gamefinishwidget->setGameFilePath("D:/BCIData/FTP-LocalSave");
 }
 
-void WBGWIdget::setGameEndWidgetConnect()
-{
-}
 
 void WBGWIdget::setMoniotrConnect()
 {
@@ -328,7 +328,7 @@ void WBGWIdget::setTCPConnect()
     connect(tcpserver,&TcpServer::gameFireHit,bcimonitor,&BCIMonitor::appendMarkFireHit);
     connect(tcpserver,&TcpServer::gameFireMiss,bcimonitor,&BCIMonitor::appendMarkFireMiss);
     connect(tcpserver,&TcpServer::gameCutHit,bcimonitor,&BCIMonitor::appendMarkCutHit);
-    connect(tcpserver,&TcpServer::gameFinish,gameoverwidget,&GameOverWidget::setMap);
+    connect(tcpserver,&TcpServer::gameFinish,gamefinishwidget,&GameFinishWidget::showWidget);
     connect(tcpserver,&TcpServer::gameStart,this,&WBGWIdget::acceptGameAccount);
 }
 
