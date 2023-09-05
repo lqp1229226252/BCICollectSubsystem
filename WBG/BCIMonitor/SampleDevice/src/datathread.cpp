@@ -29,7 +29,8 @@ void DataThread::run()
             int buf_num=all_data.size();
             for(int i=0;i<buf_num;i++){
                 QList<double> data=all_data.at(i);
-                if(data.size()!=0)
+                data=filter.filterData(data);
+                if(!data.isEmpty())
                 {
                     usleep(1);
                     emit readFinish(data);
@@ -50,6 +51,11 @@ void DataThread::run()
                     }
                 }
             }
+        }
+        if(destroyFlag)
+        {
+            destroyFlag=false;
+            return;
         }
     }
 }

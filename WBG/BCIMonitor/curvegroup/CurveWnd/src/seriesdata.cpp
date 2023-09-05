@@ -4,8 +4,8 @@ SeriesData::SeriesData(QObject *parent) : QObject(parent)
 {
     this->point_index=0;
     this->max_point_num=100;
-    this->max=200;
-    this->min=-200;
+    this->max=100;
+    this->min=-100;
 }
 void SeriesData::append(double data)
 {
@@ -16,7 +16,7 @@ void SeriesData::append(double data)
         QPointF point(series_point.size(), data);
         this->raw_points.append(point);
 
-         queue.append(data);
+//         queue.append(data);
         //图标显示数据
         data=data/(max-min);
         point.setY(data+2*Id);
@@ -28,18 +28,17 @@ void SeriesData::append(double data)
     {
         point_index = 0;
 
-
     }
-    //更新基线
-    if(queue.size()==max_point_num)
-    {
-        QList<double> queue=this->queue.mid(this->queue.size()-50);
-        base_line=std::accumulate(queue.begin(),queue.end(),0)/50;
-        queue.clear();
-    }
-    queue.append(data);
+//    //更新基线
+//    if(queue.size()==max_point_num)
+//    {
+//        QList<double> queue=this->queue.mid(this->queue.size()-50);
+//        base_line=std::accumulate(queue.begin(),queue.end(),0)/50;
+//        queue.clear();
+//    }
+//    queue.append(data);
 
-    data=basecheck(data);
+//    data=basecheck(data);
     current_data=data;
     //原始数据
     QPointF point(point_index, data);
@@ -91,7 +90,7 @@ void SeriesData::setMax(int value)
 
 void SeriesData::increaseScaleFactor()
 {
-    if(max>=100)
+    if(max>=50)
     {
         max/=1.5;
         min/=1.5;
@@ -100,7 +99,7 @@ void SeriesData::increaseScaleFactor()
 
 void SeriesData::reduceScaleFactor()
 {
-    if(max<=400)
+    if(max<=100)
     {
         max*=1.5;
         min*=1.5;
